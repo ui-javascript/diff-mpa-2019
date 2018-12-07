@@ -1,0 +1,113 @@
+.padd {
+    position: relative;
+    margin-top: 10px;
+    padding: 0 15px;
+    .item {
+        padding: 10px 0;
+        color: #666;
+        .icon,
+        .goodInfo,
+        .lineInfo {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .lineInfo {
+            font-weight: bold;
+            color: #333;
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                height: 24px;
+                line-height: 24px;
+                b {
+                    color: #f60;
+                    padding: 0 5px;
+                }
+                &.arrow {
+                    background: url('../../assets/img/arrow.svg') no-repeat center width 30px height 24px background-size cover
+                }
+            }
+        }
+    }
+    .success_icon {
+        height: 80%;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+    }
+}
+.pannel {
+    background: #fff;
+    position: relative;
+    margin-top: 10px;
+    &:before,
+    &:after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: #ddd;
+        transform: scale(1, .5)
+    }
+    &:before {
+        top: 0
+    }
+    &:after {
+        bottom: 0
+    }
+    .pannel_title {
+        padding: 10px 15px;
+        font-size: 16px;
+        &.pannel_title1 {
+            color: #f3be40
+        }
+        &.pannel_title2 {
+            color: #6cc
+        }
+        &.pannel_title3 {
+            color: #69f
+        }
+    }
+    .pannel_item {
+        position: relative;
+        padding: 10px 15px;
+        font-size: 14px;
+        &:before {
+            content: '';
+            height: 1px;
+            position: absolute;
+            left: 15px;
+            right: 0;
+            top: 0;
+            background: #ddd;
+            transform: scale(1, .5)
+        }
+        &:first-child {
+            &:before {
+                display: none
+            }
+        }
+        .labels {
+            color: #999
+        }
+    }
+    .section {
+        width: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        &.section1 {
+            background: #f3be40
+        }
+        &.section2 {
+            background: #6cc
+        }
+        &.section3 {
+            background: #69f
+        }
+    }
+}

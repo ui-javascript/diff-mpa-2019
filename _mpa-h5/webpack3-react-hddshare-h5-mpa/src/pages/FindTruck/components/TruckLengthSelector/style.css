@@ -1,0 +1,76 @@
+.tls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  transition: top .2s;
+  -moz-transition: top .2s;
+  -webkit-transition: top .2s;
+  -o-transition: top .2s; }
+  .tls-body {
+    min-height: 200px; }
+    .tls-body-tit {
+      padding: 5px;
+      background: #f8f8f8;
+      font-size: 14px; }
+    .tls-body ul {
+      margin-bottom: 10px;
+      padding: 0 5px; }
+      .tls-body ul li {
+        float: left;
+        width: 25%;
+        padding: 10px 5px 0;
+        text-align: center; }
+        .tls-body ul li.selected span {
+          border-color: #6cc;
+          color: #6cc;
+          background: url("../../../../assets/img/selected.png") no-repeat right top; }
+        .tls-body ul li span {
+          border: 1px solid #ddd;
+          display: block;
+          font-size: 14px;
+          padding: 5px 0;
+          border-radius: 4px;
+          color: #666;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden; }
+  .tls-footer {
+    height: 64px;
+    padding: 10px 5px;
+    background: #eee;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex; }
+    .tls-footer-cancel, .tls-footer-confirm {
+      height: 44px;
+      line-height: 44px;
+      margin: 0 10px;
+      border-radius: 22px;
+      flex: 1;
+      outline: none;
+      border: none;
+      font-size: 16px; }
+      .tls-footer-cancel i, .tls-footer-confirm i {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        vertical-align: text-top;
+        margin-top: 2px;
+        margin-right: 5px; }
+    .tls-footer-cancel {
+      color: #666;
+      background: #ccc; }
+      .tls-footer-cancel i {
+        background: url("../../../../assets/img/back.svg") no-repeat;
+        background-size: cover; }
+    .tls-footer-confirm {
+      background: #6cc;
+      color: #fff; }
+      .tls-footer-confirm i {
+        background: url("../../../../assets/img/ok.svg") no-repeat;
+        background-size: cover; }

@@ -1,0 +1,26 @@
+
+.container {
+    background: url('../../assets/img/downLoad_bg.png') no-repeat #36b4e8 bottom center;
+    background-size: 100%;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    .tit,
+    .appDes{
+        width:80%;
+        margin:20px auto;
+    }
+    .des{
+        color:#fff;
+        font-size:10pt;
+        padding:0 20px;
+    }
+    .downLoadBtn {
+        display: block;
+        width: 140px;
+        margin: 10px auto 0;
+    }
+}

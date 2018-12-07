@@ -1,0 +1,151 @@
+.c1 {
+    color: #6cc;
+}
+.c3 {
+    color: #f60;
+}
+.bold {
+    font-weight: bold;
+}
+.goods {
+    background-color: #fff;
+    margin-bottom: 10px;
+    font-size: 12px;
+    position: relative;
+    &::after {
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: 1px;
+        content: '';
+        transform: scaleY(.5);
+        background-color: #ddd;
+    }
+    .baseInfo {
+        display: block;
+        padding: 10px 10px 10px 85px;
+        position: relative;
+        min-height: 110px;
+        text-decoration: none;
+        color: #666;
+        .ls {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 70px;
+            img {
+                border-radius: 4px;
+            }
+            .name {
+                font-size: 13px;
+                text-align: center;
+                margin: 0;
+                color: #333333;
+            }
+        }
+        .text {
+            p {
+                color: #999;
+                margin-bottom: 0;
+            }
+            .line,.quote,.cargoDesc,.truckDesc {
+                position: relative;
+                line-height: 20px;
+                padding-left: 18px;
+                margin-top: 3px;
+                &:before {
+                    position: absolute;
+                    left: 0;
+                    top: 3px;
+                    content: '';
+                    display: block;
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+            .line {
+                padding-right: 20px;
+                &:before {
+                    background: url('../../../../assets/icons/local_icon.svg') no-repeat center;
+                    background-size: contain;
+                }
+            }
+            .quote {
+                margin-top: 6px;
+                padding-right: 40px;
+                .quote_sort {
+                    border: 1px solid #6cc;
+                    padding: 1px 5px;
+                    border-radius: 8px;
+                    margin-right: 5px;
+                    color: #6cc;
+                    &.quote_sort1 {
+                        border-color: #1a8df8;
+                        color: #1a8df8;
+                    }
+                }
+                .quote_sort1 {
+                    @extend .quote_sort;
+                    border-color: #1a8df8;
+                    color: #1a8df8;
+                }
+                .quote_status {
+                    color: #f60;
+                    border: 1px solid #f60;
+                    padding: 1px 5px;
+                    border-radius: 8px;
+                }
+                &:before {
+                    background: url('../../../../assets/icons/quote_icon.svg') no-repeat center;
+                    background-size: 80% 80%;
+                }
+            }
+            .cargoDesc {
+                padding-right: 40px;
+                &:before {
+                    background: url('../../../../assets/icons/package.svg') no-repeat center;
+                    background-size: 80% 80%;
+                }
+            }
+            .truckDesc {
+                padding-right: 40px;
+                &:before {
+                    background: url('../../../../assets/icons/truckDesc_icon.svg') no-repeat center;
+                    background-size: contain;
+                }
+            }
+            .line {
+                @extend .bold;
+                font-size: 14px;
+                color: #666;
+                overflow: hidden;
+                height: 20px;
+                margin-top: 0;
+                span {
+                    display: block;
+                    float: left;
+                    height: 20px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                .arrow {
+                    float: left;
+                    width: 20px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .iconPhone {
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        background-image: url('../../../../assets/icons/ic_call_phone_image.png');
+        background-size: cover;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

@@ -1,0 +1,58 @@
+.findGoods {
+    padding-top: 40px;
+    overflow: hidden;
+    .block {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #f8f8f8;
+    }
+    .wrapper {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        right: 0;
+        bottom: 0;
+    }
+    .filterBox {
+        background: #fff;
+        box-shadow: 0 0 5px rgba(0,0,0,.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        height: 40px;
+        padding: 5px;
+        display: flex;
+        font-size: 12px;
+        .from, .destination {
+            flex: 1;
+            border: 1px solid #ddd;
+            padding: 0 30px 0 5px;
+            line-height: 28px;
+            border-radius: 4px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            background: url('../../assets/icons/arrow-b.png') no-repeat right center;
+        }
+        .arrow {
+            flex: 0 40px;
+            background: url('../../assets/icons/arrow.svg') no-repeat center;
+            display: inline-block;
+            background-size: contain;
+            width: 40px;
+            height: 30px;
+            vertical-align: top;
+        }
+        .more {
+            flex: 0 50px;
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+}

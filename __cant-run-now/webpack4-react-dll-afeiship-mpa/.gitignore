@@ -1,0 +1,10 @@
+node_modules
+bower_components
+coverage
+.idea
+dist
+npm-debug.log
+yarn.lock
+package-lock.json
+.DS_Store
+.idea

@@ -1,0 +1,13 @@
+:root {
+  /* COLOURS */
+  --black: #343434;
+  --white: #ffffff;
+
+  /* FONT STACK */
+  --font: Helvetica, arial, sans-serif;
+}
+
+@custom-media --desktop-wide-mq (width >= 1600px);
+@custom-media --desktop-mq (width >= 1022px);
+@custom-media --tablet-mq (width <= 1021px);
+@custom-media --mobile-mq (width <= 750px);

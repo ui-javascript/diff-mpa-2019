@@ -1,0 +1,25 @@
+.agreenment_con {
+    padding: 0 1em 1em
+}
+
+.listItem {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding:10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    color:#666;
+    &:after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background: #ddd;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        transform: scale(1,0.5)
+    }
+}

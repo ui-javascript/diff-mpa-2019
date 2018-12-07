@@ -1,0 +1,39 @@
+.labels {
+    float: left;
+    color: #999;
+}
+span {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    &:before {
+        width: 20px;
+        height: 20px;
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+    &.attention {
+        color: #868686;
+        &:before {
+            background: url('../../../../assets/icons/wrz.svg') no-repeat;
+        }
+    }
+    &.attentioned {
+        color: #6cc;
+        &:before {
+            background: url('../../../../assets/icons/yrz.svg') no-repeat;
+        }
+    }
+    &.commited {
+        color: #6cc;
+    }
+    &.uncommited {
+        color: #868686;
+    }
+}

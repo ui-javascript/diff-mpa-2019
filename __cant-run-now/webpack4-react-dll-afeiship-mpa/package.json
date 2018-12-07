@@ -1,0 +1,54 @@
+{
+  "name": "webpack-react-multipage",
+  "version": "undefined",
+  "description": "React multipage app based on webpack.",
+  "homepage": "https://github.com/afeiship/webpack-react-multipage",
+  "author": {
+    "name": "afei",
+    "email": "1290657123@qq.com"
+  },
+  "scripts": {
+    "install": "npm install",
+    "install:cnpm": "cnpm install",
+    "remove": "rimraf node_modules",
+    "preview": "serve -s dist -p 9567",
+
+    "clean": "rimraf dist",
+    "dll": "webpack -p --env.type=dll --env.mode=production",
+    "predev": "npm run clean && npm run dll",
+    "dev": "webpack-dev-server --env.type=local --env.mode=development",
+    "build-development": "npm run predev && webpack -p --env.mode=development",
+    "build-production": "npm run predev && webpack -p --env.mode=production",
+    "start": "node express.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "fastclick": "^1.0.6",
+    "mixin-decorator": "github:afeiship/mixin-decorator",
+    "next-axios": "github:afeiship/next-axios",
+    "next-delete": "github:afeiship/next-delete",
+    "next-hashlize": "github:afeiship/next-hashlize",
+    "next-js-core2": "github:afeiship/next-js-core2",
+    "next-react-redux": "github:afeiship/next-react-redux",
+    "next-scroll-minder": "github:afeiship/next-scroll-minder",
+    "next-store": "github:afeiship/next-store",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "resolution": "github:afeiship/resolution",
+    "webkit-sass-functions": "afeiship/webkit-sass-functions",
+    "webkit-sass-generators": "afeiship/webkit-sass-generators",
+    "webkit-sass-mixins": "afeiship/webkit-sass-mixins",
+    "webkit-sass-reset": "afeiship/webkit-sass-reset",
+    "webkit-sassui-short-name": "afeiship/webkit-sassui-short-name"
+  },
+  "devDependencies": {
+    "webpack": "^4.6.0",
+    "webpack-app-kits": "afeiship/webpack-app-kits",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.2"
+  }
+}

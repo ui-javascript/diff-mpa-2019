@@ -1,0 +1,101 @@
+.wrapper {
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    background: #fff;
+    padding: 10px 50px 10px 90px;
+    height: 110px;
+    overflow: hidden;
+    .baseInfo {
+        display: block;
+        text-decoration: none;
+        .ls {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 70px;
+            img {
+                border-radius: 4px;
+            }
+            .status {
+                font-size: 12px;
+                text-align: center;
+                display: block;
+                span {
+                    color: #fff;
+                    height: 20px;
+                    padding: 2px 10px 2px 2px;
+                    border-radius: 8px;
+                    i {
+                        height: 16px;
+                        width: 16px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        border-radius: 8px;
+                        margin: -1px 5px 0 0;
+                    }
+                }
+                .status1 {
+                    background: #6cc;
+                    i {
+                        background: url('../../../../assets/icons/status_icon1.svg') #fff no-repeat center;
+                        background-size: 80%;
+                    }
+                }
+                .status2 {
+                    background: #f80;
+                    i {
+                        background: url('../../../../assets/icons/status_icon2.svg') #fff no-repeat center;
+                        background-size: 80%;
+                    }
+                }
+            }
+        }
+    }          
+    .iconPhone {
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        background-image: url('../../../../assets/icons/ic_call_phone_image.png');
+        background-size: cover;
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+    }
+    .text {
+        p {
+            color: #999;
+            margin-top: 3px;
+            font-size: 14px;
+        }
+        .line {
+            font-size: 16px;
+            color: #666;
+            font-weight: bold;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            height: 25px;
+            margin-top: 0;
+            span {
+                display: inline-block;
+                vertical-align: top;
+                height: 16px;
+            }
+            .arrow {
+                background: url('../../../../assets/icons/area_arrow.png') no-repeat center;
+                background-size: contain;
+                width: 20px;
+                vertical-align: middle;
+            }
+        }
+        .truckInfo {
+            color: #666;
+        }
+        .truckType {
+            color: #6cc;
+        }
+    }
+}

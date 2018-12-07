@@ -9,8 +9,8 @@
     "preview": "serve -s dist -p 9567",
 
     "build": "./node_modules/.bin/webpack --progress --colors --bail",
-    "dev": "./node_modules/.bin/webpack --progress --colors --config ./webpack.dev.config.js",
     "start": "./node_modules/.bin/webpack-dev-server --config ./webpack.dev.config.js --open --hot",
+    "dev": "./node_modules/.bin/webpack --progress --colors --config ./webpack.dev.config.js",
     "profile": "./node_modules/.bin/webpack --colors --profile --display-modules --config ./webpack.dev.config.js",
     "dll": "./node_modules/.bin/webpack --progress --colors --config ./webpack-dll.config.js",
     "analyse": "webpack --json > ./build/stats.json && webpack-bundle-analyzer --port 8989 ./build/stats.json",

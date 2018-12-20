@@ -4,8 +4,11 @@
   "description": "webpack4 more page cli",
   "main": "index.js",
   "scripts": {
-    "install:cnpm": "cnpm install",
+    "install": "npm install",
+    "install:taobao": "npm install --registry=https://registry.npm.taobao.org",
+    "install:yarn": "yarn install",
     "remove": "rimraf node_modules",
+
     "dev": "cross-env NODE_ENV=development webpack-dev-server  --hot --inline  --watch --host  0.0.0.0 --config build/webpack.config.dev.js --mode development",
     "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.prod.js --mode production"
   },

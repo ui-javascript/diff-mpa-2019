@@ -7,7 +7,7 @@
   "scripts": {
     "install:cnpm": "cnpm install",
     "remove": "rimraf node_modules",
-    "start:chat": "node chatserver.js",
+    "start:chat": "node chat.js",
     "start:zhuishu": "node zhuishushenqi.js"
   },
   "dependencies": {

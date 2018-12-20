@@ -16,14 +16,18 @@ module.exports = {
     build: {
         env: {
             NODE_ENV: '"production"',
+            // BASE_API: '"https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin"',
             BASE_API: '"https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin"',
+            // BASE_API: '"https://api-dev"',
         },
     },
     dev: {
         port: 9527,
         env: {
             NODE_ENV: '"development"',
+            // BASE_API: '"https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin"',
             BASE_API: '"https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin"',
+            // BASE_API: '"https://api-prod"',
         },
     },
 };

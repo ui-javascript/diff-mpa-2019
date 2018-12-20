@@ -6,9 +6,9 @@
   "scripts": {
     "install:yarn": "yarn install",
     "remove": "rimraf node_modules",
-    "dev": "webpack-dev-server  --mode development --devtool inline-source-map --hot",
-    "build:dist": "webpack --mode production",
-    "start": "node www.js"
+    "start": "node www.js",
+    "dev": "webpack-dev-server --mode development --devtool inline-source-map --hot",
+    "build:dist": "webpack --mode production"
   },
   "author": "leinov",
   "license": "MIT",

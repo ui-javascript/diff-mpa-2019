@@ -8,7 +8,7 @@
 
 const fs = require("fs");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const getPath = require("./get-path");
+// const getPath = require("./get-path");
 let htmlArr = [];
 
 function getInfoData(infoJsonFile) {

@@ -14,9 +14,11 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");//css分离打�
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");//js压缩
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin"); //css压缩
 const createHtml = require("./config/create-html");// html配置
+
+const config = require("./config")
 const getEntry = require("./config/get-entry");
-// const entry = getEntry("./pages/index/*.js");
-const entry = getEntry("./_pages/{todo,index}/*.js");
+const entry = getEntry(config.system);
+// const entry = getEntry("./_pages/{todo,index}/*.js");
 const htmlArr = createHtml(entry.details);
 
 //主配置

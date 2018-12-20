@@ -5,21 +5,62 @@
  * @date: 2018-10-11
  * @update: 2018-11-04 优化入口方法 调用getPath
  */
-const getPath = require("./get-path");
+const glob = require('glob')
+const path = require("path");
+
+// const getPath = require("./get-path");
+
 /**
  * 【获取entry文件入口】
  *
  * @param {String} path 引入根路径
  * @returns {Object} 返回的entry { "about/aoubt":"./src/about/about.js",...}
  */
-module.exports = function getEnty(path){
-	let entry = {};
-	getPath(path).map((item)=>{
-		/**
-		 * 下面输出格式为{"about/about":".src/aobout/index.js"}
-		 * 这样目的是为了将js打包到对应的文件夹下
-		 */
-		entry[`${item}/${item}`] = `${path}/${item}/index.js`;
-	});
-	return entry;
-};
+function getEntry(globPath) {
+
+    // console.log(globPath)
+
+    let details = []
+    let entries = {}
+
+    glob.sync(globPath).forEach(function(entry) {
+        let basename, prefixname = '', modulename
+        let sections
+
+        sections = entry.split('/').splice(-3);
+        basename = path.basename(entry, path.extname(entry));
+
+        // 前缀
+        if (basename.indexOf(sections[1]) != 0) {
+            prefixname += `${sections[1]}-`
+        }
+        prefixname += basename
+        modulename = `${sections[1]}/${basename}`
+
+        // console.log(entry, basename, prefixname, sections, modulename)
+        details.push({
+            // ./pages/index/page2.js
+            entry: entry,
+            // page2
+            basename: basename,
+            // index-page2
+            prefixname: prefixname,
+            // [ 'index', 'page2.js' ]
+            sections: sections,
+            // index/page2
+            modulename: modulename
+        })
+
+        entries[modulename] = entry
+    });
+
+    // console.log('入口')
+    // console.log(entries)
+
+    return {
+        details: details,
+        entries: entries
+    };
+}
+
+module.exports = getEntry

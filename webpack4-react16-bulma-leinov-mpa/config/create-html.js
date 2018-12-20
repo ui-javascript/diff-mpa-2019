@@ -7,35 +7,67 @@
  */
 
 const fs = require("fs");
-const HtmlWebpackPlugin = require("html-webpack-plugin");//生成html文件
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const getPath = require("./get-path");
 let htmlArr = [];
-function createHtml(page_path){
-	getPath(page_path).map((item)=>{
-		let infoJson ={},infoData={};
-		try{
-			// 读取pageinfo.json文件内容，如果在页面目录下没有找到pageinfo.json 捕获异常
-			infoJson = fs.readFileSync(`${page_path}/${item}/pageinfo.json`,"utf-8");//
-			infoData = JSON.parse(infoJson);
-		}catch(err){
-			infoData = {};
-		}
-		htmlArr.push(new HtmlWebpackPlugin({
-			title:infoData.title ? infoData.title : "webpack,react多页面架构",
-			meta:{
-				keywords: infoData.keywords ? infoData.keywords : "webpack，react，github",
-				description:infoData.description ? infoData.description : "这是一个webpack，react多页面架构"
-			},
-			chunks:[`${item}/${item}`], //引入的js
-			template: "./src/template.html",
-			filename : item == "index" ? "index.html" : `${item}/index.html`, //html位置
-			minify:{//压缩html
-				collapseWhitespace: true,
-				preserveLineBreaks: true
-			},
-		}));
-	});
-	return htmlArr;
+
+function getInfoData(infoJsonFile) {
+    let infoJson = {}, infoData = {}
+
+    // 如果在页面目录下没有找到info.json 捕获异常
+    try {
+        infoJson = fs.readFileSync(infoJsonFile, "utf-8");
+        infoData = JSON.parse(infoJson)
+    } catch (err) {
+
+        // 默认值
+        infoData = {
+            "title": "react-multi-page-app",
+            "keywords": "react,multi-page,webpack,node",
+            "description": "this is a react-multi-page-app"
+        }
+    }
+
+    return infoData
+}
+
+
+function createHtml(details) {
+
+    // details like this!!
+    // detsils = [{
+    //     entry: './pages/index/page2.js',
+    //     basename: 'page2',
+    //     prefixname: 'index-page2',
+    //     sections: [ 'pages', 'index', 'page2.js' ],
+    //     modulename: 'index/page2'
+    // }]
+
+    details.map((item) => {
+
+        // console.log(`${item.sections[0]}/${item.sections[0]}/${item.basename}.json`)
+        let infoData = getInfoData(`./${item.sections[0]}/${item.sections[1]}/${item.basename}.json`)
+
+        htmlArr.push(new HtmlWebpackPlugin({
+            title: infoData.title,
+            meta: {
+                keywords: infoData.keywords,
+                description: infoData.description
+            },
+            // 引入的js
+            chunks: [`${item.modulename}`],
+            template: "./public/template.html",
+            // @nice 便于直接访问index.html
+            filename: item.modulename == "index/index" ? "index.html" : `${item.prefixname}.html`, //html位置
+            minify: {//压缩html
+                collapseWhitespace: true,
+                preserveLineBreaks: true
+            },
+        }));
+    });
+
+    // console.log(htmlArr)
+    return htmlArr;
 }
 
 

@@ -28,6 +28,6 @@ server.listen(port);
 server.on("listening", onListening);
 
 function onListening() {
-	console.log(`server port 3118 listening and open browser with http://localhost:${port}....` );
-	opn(`http://localhost:${port}`,"chrome");
+    console.log(`server port 3118 listening and open browser with http://localhost:${port}....`);
+    opn(`http://localhost:${port}`, "chrome");
 }

@@ -6,8 +6,8 @@
   "scripts": {
     "install:yarn": "yarn install",
     "remove": "rimraf node_modules",
-    "start": "node www.js",
     "dev": "webpack-dev-server --mode development --devtool inline-source-map --hot",
+    "start@deprecated": "node www.js",
     "build:dist": "webpack --mode production"
   },
   "author": "leinov",
@@ -42,8 +42,9 @@
     "bulma": "^0.7.1",
     "express": "^4.16.3",
     "opn": "^5.4.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.7.0",
+    "react-cache": "^2.0.0-alpha.1",
+    "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1"
   }

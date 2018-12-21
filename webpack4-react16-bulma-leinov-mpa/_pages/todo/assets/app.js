@@ -78,14 +78,15 @@ class App extends React.Component {
                         onChange={this.onChange}
                         onKeyDown={this.onKeyDown}
                     />
+                    <Filter
+                        onFilterChange={this.onFilterChange}
+                    />
                     <TodoList
                         todoList={this.props.todoList}
                         onToggleClick={this.onToggleClick}
                         deleteTodo={this.deleteTodo}
                     />
-                    <Filter
-                        onFilterChange={this.onFilterChange}
-                    />
+
                 </div>
                 <Footer/>
             </div>

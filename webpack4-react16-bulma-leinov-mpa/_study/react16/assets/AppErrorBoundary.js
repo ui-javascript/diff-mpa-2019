@@ -8,6 +8,7 @@ class ErrorBoundary extends Component {
     this.state = { hasError: false };
   }
 
+  // 错误边界
   componentDidCatch(err, info) {
     // 显示错误UI
     this.setState({ hasError: true });
@@ -42,6 +43,7 @@ class AppErrorBoundary extends Component {
         <ErrorBoundary>
           <Profile user={this.state.user} />
         </ErrorBoundary>
+
         <button onClick={this.onClick}>更新</button>
       </div>
     );

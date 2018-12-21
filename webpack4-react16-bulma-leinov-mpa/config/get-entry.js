@@ -30,32 +30,36 @@ function getEntry(globPath) {
         sections = entry.split('/').splice(-3);
         basename = path.basename(entry, path.extname(entry));
 
-        // 前缀
-        if (basename.indexOf(sections[1]) != 0) {
-            prefixname += `${sections[1]}-`
+        // 首字母小写
+        const entryFirstLetter = basename.charAt(0)
+        if (entryFirstLetter < 'A' || entryFirstLetter > 'Z' ) {
+            // 前缀
+            if (basename.indexOf(sections[1]) != 0) {
+                prefixname += `${sections[1]}-`
+            }
+            prefixname += basename
+            modulename = `${sections[1]}/${basename}`
+
+            // console.log(entry, basename, prefixname, sections, modulename)
+            details.push({
+                // ./_pages/index/page2.js
+                entry: entry,
+                // page2
+                basename: basename,
+                // index-page2
+                prefixname: prefixname,
+                // [ '_pages', 'index', 'page2.js' ]
+                sections: sections,
+                // index/page2
+                modulename: modulename
+            })
+
+            entries[modulename] = entry
         }
-        prefixname += basename
-        modulename = `${sections[1]}/${basename}`
-
-        // console.log(entry, basename, prefixname, sections, modulename)
-        details.push({
-            // ./pages/index/page2.js
-            entry: entry,
-            // page2
-            basename: basename,
-            // index-page2
-            prefixname: prefixname,
-            // [ 'index', 'page2.js' ]
-            sections: sections,
-            // index/page2
-            modulename: modulename
-        })
-
-        entries[modulename] = entry
     });
 
-    // console.log('入口')
-    // console.log(entries)
+    console.log('入口')
+    console.log(entries)
 
     return {
         details: details,

@@ -17,7 +17,7 @@ const createHtml = require("./config/create-html");// html配置
 
 const config = require("./config")
 const getEntry = require("./config/get-entry");
-const entry = getEntry(config.system);
+const entry = getEntry(config.systemEntries);
 // const entry = getEntry("./_pages/{todo,index}/*.js");
 const htmlArr = createHtml(entry.details);
 

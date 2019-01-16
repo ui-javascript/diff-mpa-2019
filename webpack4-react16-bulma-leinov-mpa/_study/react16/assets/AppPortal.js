@@ -20,6 +20,8 @@ class Modal extends Component {
         </span>
         <div className="content">{this.props.children}</div>
       </div>,
+      //  第二个参数
+      // 即为注入的容器
       this.container
     );
   }

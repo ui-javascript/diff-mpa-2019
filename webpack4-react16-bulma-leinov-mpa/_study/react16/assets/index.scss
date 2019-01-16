@@ -10,17 +10,18 @@
   padding: 10px;
   background-color: #fff;
   outline: 9999px solid rgba(0, 0, 0, 0.5);
-}
 
-.modal .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: red;
-  cursor: pointer;
-}
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    cursor: pointer;
+  }
 
-.modal .content {
-  margin-top: 15px; 
-  text-align: center;
+  .content {
+    margin-top: 15px;
+    text-align: center;
+  }
+
 }

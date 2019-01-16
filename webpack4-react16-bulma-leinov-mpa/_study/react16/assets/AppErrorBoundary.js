@@ -12,6 +12,7 @@ class ErrorBoundary extends Component {
   componentDidCatch(err, info) {
     // 显示错误UI
     this.setState({ hasError: true });
+
     // 同时输出错误日志
     console.log(err, info);
   }

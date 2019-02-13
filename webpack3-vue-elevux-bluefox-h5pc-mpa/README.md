@@ -1,8 +1,7 @@
 # README
 
-- 主要是个 攒Vue组件的练习项目
+- 用途：攒Vue组件的练习项目
 - 多页面是以一级目录下的*.js算入口的
-- 另一个多页面项目(sanjs)以pug|html算入口
 - 文件名hash > hash后缀
 - 移除了原项目的二级目录支持
 - postcss-px2rem插件 -> 仅vue视图文件里的px会被转化成rem
@@ -65,7 +64,3 @@
 
 </style>
 ```
-
-# 备忘录
-
-- 手机考试 elementUI https://gitee.com/luo0412/topping

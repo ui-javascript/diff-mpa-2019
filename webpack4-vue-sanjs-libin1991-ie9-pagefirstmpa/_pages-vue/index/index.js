@@ -1,5 +1,5 @@
 /* eslint-disable */
-import '@/assets/css/com.less';
+// import '@/assets/css/com.less';
 import './index.less';
 
 console.log('首页的js运行了111～～');

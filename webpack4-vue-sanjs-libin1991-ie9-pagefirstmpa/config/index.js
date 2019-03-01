@@ -98,41 +98,49 @@ let config = {
 
 // 切换指定系统
 let sysName = [
+    /* 无依赖小项目 =========== */
     // 'default/_all',
     // 'default/index',
     // 'default/easyui',
     // 'default/layui',
     // 'default/lulu',
+
+    /* 基于San的小DEMO ======== */
     // 'san/_all',
     // 'san/index',
-    'san/router',
+    // 'san/router',
     // 'san/todo',
     // 'san-admin/_all',
     // 'san-admin/index',
     // 'san-admin/mui',
     // 'san-admin/bootstrap',
+
+    /* Vue简单示例 ============ */
     // 'vue/_all',
     // 'vue/index',
     // 'vue/bootstrap',
+    'vue/components',
+
+    /* element简易后台 ======== */
     // 'vue-admin/_all',
     // 'vue-admin/index',
-
-    /* element简易后台 */
     // 'vue-admin/element',
     // 'vue-admin/d2',
+
+    /* vue小应用 ============== */
     // 'vue-app/_all',
     // 'vue-app/index',
     // 'vue-app/notepad',
     // 'vue-app/calculator',
     // 'vue-app/chat',
-
-    /* 一些地图组件的测试 */
     // 'vue-app/map',
     // 'vue-app/nreader',
     // 'vue-app/bilibili',
     // 'vue-app/todo',
     // 'vue-app/mmplayer',
     // 'vue-app/happyfri',
+
+    /* Vue的H5小DEMO ========== */
     // 'vue-mobile/_all',
     // 'vue-mobile/index',
     // 'vue-mobile/vux',

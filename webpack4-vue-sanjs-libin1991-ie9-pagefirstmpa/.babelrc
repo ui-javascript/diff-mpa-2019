@@ -5,7 +5,11 @@
       {
         "modules": false,
         "targets": {
-          "browsers": ["last 2 versions", "ie >= 7"]
+          "browsers": [
+            "> 1%",
+            "last 2 versions",
+            "not ie <= 8"
+          ]
         }
       }
     ],
@@ -13,9 +17,7 @@
   ],
   "plugins": [
     "transform-runtime",
-    "transform-vue-jsx",
-    "transform-es2015-modules-simple-commonjs",
-    "transform-es3-property-literals",
-    "transform-es3-member-expression-literals"
+    "transform-vue-jsx"
   ]
 }
+

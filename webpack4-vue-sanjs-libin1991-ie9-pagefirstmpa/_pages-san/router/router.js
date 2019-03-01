@@ -2,10 +2,10 @@
 require("es5-polyfill")
 
 //IE8 ^4.5.10
-require('es5-shim');
-require('es5-shim/es5-sham');
+// require('es5-shim');
+// require('es5-shim/es5-sham');
 require('object-create-ie8');
-// import 'object-defineproperty-ie8';
+import 'object-defineproperty-ie8';
 require('console-polyfill');
 
 //比IE8的JSON好用

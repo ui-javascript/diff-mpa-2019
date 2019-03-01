@@ -119,12 +119,12 @@ let sysName = [
     // 'vue/_all',
     // 'vue/index',
     // 'vue/bootstrap',
-    'vue/components',
+    // 'vue/components',
 
     /* element简易后台 ======== */
     // 'vue-admin/_all',
     // 'vue-admin/index',
-    // 'vue-admin/element',
+    'vue-admin/element',
     // 'vue-admin/d2',
 
     /* vue小应用 ============== */

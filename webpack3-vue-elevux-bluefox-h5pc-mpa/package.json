@@ -7,6 +7,7 @@
   "scripts": {
     "install:cnpm": "cnpm install",
     "remove": "rimraf node_modules",
+
     "dev:melt": "cross-env SYS_NAME=melt node build/dev-server.js",
     "build:melt": "cross-env SYS_NAME=melt node build/build.js",
     "dev:vux": "cross-env SYS_NAME=vux node build/dev-server.js",

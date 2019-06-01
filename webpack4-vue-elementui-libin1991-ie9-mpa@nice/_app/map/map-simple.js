@@ -1,7 +1,7 @@
 // import Vue from 'vue'
 // import Vue from 'vue/dist/vue.common.js';
 import Vue from 'vue'
-import App from './App'
+import App from './map-simple.vue'
 
 
 Vue.config.productionTip = false

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueAMap from 'vue-amap';
 import { lazyAMapApiLoaderInstance } from 'vue-amap';
-import App from './AppAMap.vue';
+import App from './map-amap.vue';
 
 Vue.use(VueAMap);
 // VueAMap.initAMapApiLoader({

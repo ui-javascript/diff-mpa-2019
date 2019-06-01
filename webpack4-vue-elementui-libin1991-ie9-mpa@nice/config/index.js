@@ -118,7 +118,7 @@ let sysName = [
     // 'app/calculator',
     // 'app/neteasecloud',
     // 'app/chat',
-    // 'app/map',
+    'app/map',
     // 'app/nreader',
     // 'app/bilibili',
     // 'app/todo',

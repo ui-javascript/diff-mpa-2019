@@ -17,7 +17,8 @@ const PAGES = myConfig.system.pages
 const MODULES = myConfig.system.modules.replace(/\s+/g,"")
 const pageConfig = getEntry(`./${PAGES}/${MODULES}/*.html`);
 console.log('多页面如下 ')
-console.log(pageConfig)
+// pageConfig.map((item, index) => console.log(`Page${index}: ${item.template}`))
+pageConfig.map((item, index) => console.log(item))
 
 
 // 处理路径

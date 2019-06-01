@@ -1,0 +1,62 @@
+@import '../../common/css/variable.scss';
+.wbs-test-page {
+  text-align: center;
+  padding: 20px 0;
+
+  &_content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_left,
+  &_right{
+    width: 50%;
+  }
+
+  &_about-btn{
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: $baseBtn;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &_js-box,
+  &_ajax-box {
+    text-align: center;
+    margin: 15px;
+  }
+
+  &_img-box{
+    text-align: center;
+    img{
+      width: 95%;
+      border: 1px dashed #4bbbdd;
+    }
+  }
+  &_movie{
+    list-style: none;
+    padding: 0 15px;
+    li{
+      border-bottom: 1px dashed rgb(174, 174, 174);
+      margin-bottom: 15px;
+      padding: 4px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .wbs-test-page {
+    &_content {
+      display: flex;
+      justify-content: inherit;
+      flex-direction: column;
+    }
+
+    &_left,
+    &_right{
+      width: 100%;
+    }
+  }
+}

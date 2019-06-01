@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build"
+  },
+  "dependencies": {
+    "umi": "^2.6.17",
+    "umi-plugin-mpa": "^1.2.2"
+  }
+}

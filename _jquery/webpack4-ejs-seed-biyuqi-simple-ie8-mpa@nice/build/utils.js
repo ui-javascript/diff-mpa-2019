@@ -64,6 +64,8 @@ exports.htmlPlugin = () => {
     }
     arrHtml.push(new HtmlWebpackPlugin(config))
   })
+
+  arrHtml.map((item, index) => console.log(item.options ? `Page${index+1}: ${item.options.filename}` : ''))
   return arrHtml
 }
 /**

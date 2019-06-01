@@ -8,6 +8,7 @@
     "url": "https://github.com/frontend-everyone/react-webpack3-multipage-feeo"
   },
   "scripts": {
+    "install:tyarn": "tyarn install",
     "install:cnpm": "cnpm install",
     "remove": "rimraf node_modules",
     "preview": "serve -s dist -p 9567",
@@ -18,6 +19,7 @@
     "dev:firstGenerator": "npm run entry && npm run devBuildHtml",
     "dev": "webpack-dev-server --devtool eval --progress --colors --profile --config config/webpack/webpack.dev.conf.js",
     "p": "SET BABEL_ENV=production && webpack --progress --colors --config config/webpack/webpack.prod.conf.js",
+    "build": "npm run p",
     "ptp": "npm run p && gulp buildTime zip",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -2,6 +2,19 @@
   "name": "react-mode",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "install": "npm install",
+    "install:cnpm": "cnpm install",
+    "install:tyarn": "tyarn install",
+    "remove": "rimraf node_modules",
+    "preview": "serve -s dist -p 9567",
+
+    "dev": "npm run start",
+    "start": "webpack-dev-server --config build/webpack.config.base --open",
+    "build:dist": "webpack --config build/webpack.config.base",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
@@ -24,17 +37,6 @@
     "sass-loader": "^7.1.0",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
-  },
-  "scripts": {
-    "install": "npm install",
-    "install:cnpm": "cnpm install",
-    "remove": "rimraf node_modules",
-    "preview": "serve -s dist -p 9567",
-
-    "start": "webpack-dev-server --config build/webpack.config.base --open",
-    "build:dist": "webpack --config build/webpack.config.base",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

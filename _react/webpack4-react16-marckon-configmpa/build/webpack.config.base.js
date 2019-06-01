@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
     mode: 'development',
     entry: {
+        // 配置如下
         index: path.resolve(__dirname, '..', 'index.js'),
         rca: path.resolve(__dirname, '..', 'pages/redux-counterApp/src/index.js'),
         demo1: path.resolve(__dirname, '..', 'pages/demo1/index.js'),

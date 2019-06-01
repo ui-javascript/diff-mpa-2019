@@ -105,16 +105,6 @@ let sysName = [
     // 'default/layui',
     // 'default/lulu',
 
-    /* 基于San的小DEMO ======== */
-    // 'san/_all',
-    // 'san/index',
-    // 'san/router',
-    // 'san/todo',
-    // 'san-admin/_all',
-    // 'san-admin/index',
-    // 'san-admin/mui',
-    // 'san-admin/bootstrap',
-
     /* Vue简单示例 ============ */
     // 'vue/_all',
     // 'vue/index',

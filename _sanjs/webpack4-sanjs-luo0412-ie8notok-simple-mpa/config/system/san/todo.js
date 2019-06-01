@@ -13,6 +13,10 @@ module.exports = {
         externals: {},
     },
 
+    dev: {
+      port: 9567,
+    },
+
     build: {
     }
 

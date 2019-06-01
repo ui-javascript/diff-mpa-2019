@@ -109,43 +109,11 @@ let sysName = [
     // 'san/_all',
     // 'san/index',
     // 'san/router',
-    // 'san/todo',
+    'san/todo',
     // 'san-admin/_all',
     // 'san-admin/index',
     // 'san-admin/mui',
     // 'san-admin/bootstrap',
-
-    /* Vue简单示例 ============ */
-    // 'vue/_all',
-    // 'vue/index',
-    // 'vue/bootstrap',
-    // 'vue/components',
-
-    /* element简易后台 ======== */
-    // 'vue-admin/_all',
-    // 'vue-admin/index',
-    'vue-admin/element',
-    // 'vue-admin/d2',
-
-    /* vue小应用 ============== */
-    // 'vue-app/_all',
-    // 'vue-app/index',
-    // 'vue-app/notepad',
-    // 'vue-app/calculator',
-    // 'vue-app/chat',
-    // 'vue-app/map',
-    // 'vue-app/nreader',
-    // 'vue-app/bilibili',
-    // 'vue-app/todo',
-    // 'vue-app/mmplayer',
-    // 'vue-app/happyfri',
-
-    /* Vue的H5小DEMO ========== */
-    // 'vue-mobile/_all',
-    // 'vue-mobile/index',
-    // 'vue-mobile/vux',
-    // 'vue-mobile/vant',
-    // 'vue-mobile/iphone',
 ][0]
 
 sysName = sysName || 'default/index'

@@ -7,7 +7,7 @@ function resolve(dir) {
 module.exports = {
     system: {
         supportIE8: true,
-        pages: "_pages-san-admin",
+        pages: "_admin",
         modules: "index",
         resolveAlias: {},
         externals: {

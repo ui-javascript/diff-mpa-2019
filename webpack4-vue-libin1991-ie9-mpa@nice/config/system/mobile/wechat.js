@@ -7,13 +7,21 @@ function resolve(dir) {
 module.exports = {
     system: {
         supportIE8: false,
-        pages: "_pages-vue",
-        modules: "components",
+        pages: "_mobile",
+        modules: "wechat",
         resolveAlias: {},
         externals: {
         },
     },
-
     build: {
-    }
+        env: {
+            NODE_ENV: '"production"',
+        },
+    },
+    dev: {
+        port: 9527,
+        env: {
+            NODE_ENV: '"development"',
+        },
+    },
 };

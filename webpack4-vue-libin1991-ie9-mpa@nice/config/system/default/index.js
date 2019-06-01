@@ -6,14 +6,14 @@ function resolve(dir) {
 
 module.exports = {
     system: {
-        supportIE8: true,
+        supportIE8: false,
         pages: "_default",
         modules: "index",
         resolveAlias: {},
         externals: {
-            jquery: 'window.$',
-            $: 'window.$',
-            seajs: 'window.seajs',
         },
     },
+
+    build: {
+    }
 };

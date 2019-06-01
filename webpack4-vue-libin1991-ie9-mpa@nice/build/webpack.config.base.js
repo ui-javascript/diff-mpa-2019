@@ -27,14 +27,10 @@ let webpackConfig = {
         globalObject: 'this'
     },
     resolve: {
-        extensions: [".js", ".json", ".vue", ".san", '.less', '.sass', '.styl'],
+        extensions: [".js", ".json", ".vue", ".san", '.less', '.sass'],
         alias: {
             vue$: 'vue/dist/vue.esm.js',
             '@': resolve('src'),
-            '@m': resolve('src/cmpt-melt/model'),
-            '@e': resolve('src/cmpt-melt/effects'),
-            '@l': resolve('src/cmpt-melt/layout'),
-            '@t': resolve('src/cmpt-melt/toolbox'),
             // san: 'san/dist/san.dev.js'
         }
     },
@@ -63,9 +59,9 @@ let webpackConfig = {
                         // @deprecated
                         css: ExtractTextPlugin.extract({ use: ['css-loader?minimize&sourceMap=false', 'postcss-loader'] }),
                         less: ExtractTextPlugin.extract({ use: ['css-loader?minimize&sourceMap=false', 'postcss-loader', "less-loader" ] }),
-                        sass: ExtractTextPlugin.extract({ use: ['css-loader?minimize&sourceMap=false', 'postcss-loader', "sass-loader" ] }),
+                        // sass: ExtractTextPlugin.extract({ use: ['css-loader?minimize&sourceMap=false', 'postcss-loader', "sass-loader" ] }),
                         scss: ExtractTextPlugin.extract({ use: ['css-loader?minimize&sourceMap=false', 'postcss-loader', "sass-loader" ] }),
-                        stylus: ExtractTextPlugin.extract({ use: ['css-loader?minimize&sourceMap=false', 'postcss-loader', "stylus-loader" ] }),
+                        // stylus: ExtractTextPlugin.extract({ use: ['css-loader?minimize&sourceMap=false', 'postcss-loader', "stylus-loader" ] }),
                         styl: ExtractTextPlugin.extract({ use: ['css-loader?minimize&sourceMap=false', 'postcss-loader', "stylus-loader" ] })
                     }
                 },
@@ -74,10 +70,10 @@ let webpackConfig = {
                     resolve(myConfig.system.pages),
                 ]
             },
-            {
-                test: /\.san$/,
-                loader: 'san-loader',
-            },
+            // {
+            //     test: /\.san$/,
+            //     loader: 'san-loader',
+            // },
             {
                 test: /\.svg$/,
                 loader: 'svg-sprite-loader',

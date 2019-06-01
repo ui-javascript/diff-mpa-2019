@@ -98,18 +98,14 @@ let config = {
 
 // 切换指定系统
 let sysName = [
-    /* 无依赖小项目 =========== */
-    // 'default/_all',
-    // 'default/index',
-    // 'default/easyui',
-    // 'default/layui',
-    // 'default/lulu',
 
     /* 基于San的小DEMO ======== */
     // 'san/_all',
     // 'san/index',
     // 'san/router',
     'san/todo',
+
+    /* san-admin ============== */
     // 'san-admin/_all',
     // 'san-admin/index',
     // 'san-admin/mui',

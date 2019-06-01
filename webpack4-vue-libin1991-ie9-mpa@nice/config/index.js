@@ -98,44 +98,41 @@ let config = {
 
 // 切换指定系统
 let sysName = [
-    /* 无依赖小项目 =========== */
-    // 'default/_all',
-    // 'default/index',
-    // 'default/easyui',
-    // 'default/layui',
-    // 'default/lulu',
 
     /* Vue简单示例 ============ */
-    // 'vue/_all',
-    // 'vue/index',
-    // 'vue/bootstrap',
-    // 'vue/components',
+    // 'default/_all',
+    // 'default/index',
+    // 'default/bootstrap',
+    // 'default/components',
 
     /* element简易后台 ======== */
-    // 'vue-admin/_all',
-    // 'vue-admin/index',
-    // 'vue-admin/element',
-    // 'vue-admin/d2',
+    // 'admin/_all',
+    // 'admin/index',
+    'admin/element',
+    // 'admin/d2',
 
     /* vue小应用 ============== */
-    // 'vue-app/_all',
-    // 'vue-app/index',
-    // 'vue-app/notepad',
-    // 'vue-app/calculator',
-    // 'vue-app/chat',
-    // 'vue-app/map',
-    // 'vue-app/nreader',
-    // 'vue-app/bilibili',
-    'vue-app/todo',
-    // 'vue-app/mmplayer',
-    // 'vue-app/happyfri',
+    // 'app/_all',
+    // 'app/index',
+    // 'app/notepad',
+    // 'app/calculator',
+    // 'app/neteasecloud',
+    // 'app/chat',
+    // 'app/map',
+    // 'app/nreader',
+    // 'app/bilibili',
+    // 'app/todo',
+    // 'app/mmplayer',
+    // 'app/happyfri',
 
     /* Vue的H5小DEMO ========== */
-    // 'vue-mobile/_all',
-    // 'vue-mobile/index',
-    // 'vue-mobile/vux',
-    // 'vue-mobile/vant',
-    // 'vue-mobile/iphone',
+    // 'mobile/_all',
+    // 'mobile/index',
+    // 'mobile/vux',
+    // 'mobile/vant',
+    // 'mobile/iphone',
+    // 'mobile/wechat',
+
 ][0]
 
 sysName = sysName || 'default/index'

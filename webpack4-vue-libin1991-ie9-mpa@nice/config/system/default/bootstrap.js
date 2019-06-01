@@ -7,8 +7,8 @@ function resolve(dir) {
 module.exports = {
     system: {
         supportIE8: false,
-        pages: "_pages-vue",
-        modules: "*",
+        pages: "_default",
+        modules: "bootstrap",
         resolveAlias: {},
         externals: {
         },

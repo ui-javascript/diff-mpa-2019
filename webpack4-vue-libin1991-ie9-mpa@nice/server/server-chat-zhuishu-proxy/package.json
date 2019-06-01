@@ -5,10 +5,11 @@
   "author": "taylor <709161610@qq.com>",
   "license": "MIT",
   "scripts": {
+    "install:tyarn": "tyarn install",
     "install:cnpm": "cnpm install",
     "remove": "rimraf node_modules",
-    "start:chat": "node chat.js",
-    "start:zhuishu": "node zhuishushenqi.js"
+    "dev:chat": "node chat.js",
+    "dev:zhuishu": "node zhuishushenqi.js"
   },
   "dependencies": {
     "express": "^4.14.1",

@@ -3,9 +3,11 @@
   "version": "2.11.0",
   "description": "网易云音乐 NodeJS 版 API",
   "scripts": {
+    "install:tyarn": "tyarn install",
     "install:cnpm": "cnpm install",
     "remove": "rimraf node_modules",
     "start": "node app.js",
+    "dev": "npm run start",
     "test": "mocha -r intelli-espower-loader -t 20000 test",
     "precommit": "lint-staged"
   },

@@ -81,6 +81,6 @@ module.exports = app.listen(port, function (err) {
         console.log(err)
         return
     }
-    console.log("\n正在构建初始化中，构建完成后，将自动在浏览器打开页面。");
+    console.log("\n正在构建初始化中...");
     // when env is testing, don't need open it
 })

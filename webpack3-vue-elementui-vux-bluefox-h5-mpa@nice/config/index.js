@@ -24,7 +24,7 @@ var defaultConfig = {
         port: 8888,
 
         // 自动打开的首页
-        autoOpenBrowser: true,
+        autoOpenBrowser: false,
         indexPage: `/_${sysName}/index.html`,
 
         assetsSubDirectory: 'static',
@@ -74,7 +74,7 @@ var defaultConfig = {
 // var detailConfig = require('./system/default')
 // 在命令行中指定
 
-console.log(`当前系统 ==> ${sysName}`)
+console.log(`当前系统: ${sysName}`)
 
 // 如果存在配置文件
 if (fs.existsSync(`./config/system/${sysName}.js`)) {
@@ -86,9 +86,7 @@ if (fs.existsSync(`./config/system/${sysName}.js`)) {
     // Object.assign(exports.prod, details.prod)
 
     defaultConfig = merge(defaultConfig, detailConfig)
-    console.log(sysName + '配置文件已覆盖(๑•̀ㅂ•́)و✧')
-} else {
-    console.log('使用默认配置')
+    console.log(sysName + '配置已覆盖(๑•̀ㅂ•́)و✧')
 }
 
 module.exports = defaultConfig

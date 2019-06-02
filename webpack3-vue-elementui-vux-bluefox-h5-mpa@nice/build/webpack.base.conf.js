@@ -17,9 +17,12 @@ function resolve(dir) {
     return path.join(__dirname, '..', dir)
 }
 
+
 // 输出路径
-console.log('检测到以下页面：')
-console.log(chunks)
+console.log('==========')
+// console.log(entries)
+chunks.map((item, index) => console.log(`Page${index}: http://localhost:${config.dev.port}/${item}.html`))
+console.log('==========\n\n\n')
 
 
 // Vux的loader
@@ -27,7 +30,6 @@ const vuxLoader = require('vux-loader')
 
 // Vue loader配置
 var vueLoaderConfig = require('./vue-loader.conf')
-
 
 
 var webpackConfig = {

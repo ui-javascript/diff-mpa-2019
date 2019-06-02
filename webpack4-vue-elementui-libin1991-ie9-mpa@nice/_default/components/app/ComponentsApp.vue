@@ -1,6 +1,6 @@
 <template>
 	<div class="index">
-        hello world
+        hello world 22222
 
         <v-distpicker province="广东省" city="广州市" area="海珠区"></v-distpicker>
 

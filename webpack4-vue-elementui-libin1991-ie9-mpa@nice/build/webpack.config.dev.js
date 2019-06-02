@@ -18,7 +18,7 @@ const MODULES = myConfig.system.modules.replace(/\s+/g,"")
 const pageConfig = getEntry(`./${PAGES}/${MODULES}/*.html`);
 console.log('多页面列表如下: \n=================  ')
 // pageConfig.map((item, index) => console.log(`Page${index}: ${item.template}`))
-pageConfig.map((item, index) => console.log(`http://localhost:${myConfig.dev.port}/${item.name}`))
+pageConfig.map((item, index) => console.log(`Page${index}: http://localhost:${myConfig.dev.port}/${item.name}`))
 console.log('=================\n\n\n')
 
 

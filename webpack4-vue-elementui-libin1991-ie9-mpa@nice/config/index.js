@@ -108,7 +108,7 @@ let sysName = [
     /* element简易后台 ======== */
     // 'admin/_all',
     // 'admin/index',
-    // 'admin/element',
+    'admin/element',
     // 'admin/d2',
 
     /* vue小应用 ============== */
@@ -118,7 +118,7 @@ let sysName = [
     // 'app/calculator',
     // 'app/neteasecloud',
     // 'app/chat',
-    'app/map',
+    // 'app/map',
     // 'app/nreader',
     // 'app/bilibili',
     // 'app/todo',

@@ -1,0 +1,249 @@
+html {
+    height: 100%
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: #f0f4f5;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div, section, nav, p {
+    box-sizing: border-box;
+}
+
+body, input, select, textarea, button {
+    font-family: 'Microsoft YaHei', "PingFang SC", "Hiragino Sans GB", -apple-system, Arial;
+}
+
+.full {
+    height: 100%;
+    width: 100%;
+}
+
+/* 高度自适应布局*/
+.full-ctn {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.vfull-head {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    /*height: 30px;*/
+}
+
+.vfull-body {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    /*padding-top: 30px;
+    padding-bottom: 20px;*/
+}
+
+.vfull-foot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /*height: 20px;*/
+}
+
+/*宽度自适应布局*/
+
+.hfull-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    /*width: 30px;*/
+}
+
+.hfull-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /*padding-left: 30px;
+    padding-right: 20px;*/
+}
+
+.hfull-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    /*width: 20px;*/
+}
+
+.lined {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewbox="0,0,1,1"><line y1="100%" x1="0" y2="100%" x2="9999" stroke="#ccc" fill="none"/></svg>');
+    min-height: 1px;
+}
+
+.pre {
+    white-space: pre-wrap;
+    line-height: 1.1em;
+    word-break: break-all;
+}
+
+.hide {
+    display: none;
+}
+
+.hide_v {
+    visibility: hidden;
+}
+
+.inlnb {
+    display: inline-block;
+}
+
+.no-border {
+    border: none;
+}
+
+.bordered {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.lay-tbl {
+    display: table;
+}
+
+.lay-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.clearfix-child:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.b-center {
+    margin: auto;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.v-top {
+    vertical-align: top;
+}
+
+.v-middle {
+    vertical-align: middle;
+}
+
+.v-bottom {
+    vertical-align: bottom;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.h100 {
+    height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.auto-bar {
+    overflow: auto;
+}
+
+.pd-10 {
+    padding: 10px;
+}
+
+.mg-10 {
+    margin: 10px;
+}

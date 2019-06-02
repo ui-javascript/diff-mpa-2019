@@ -58,8 +58,13 @@ function getEntry(globPath) {
         }
     });
 
-    console.log('入口')
-    console.log(entries)
+    // console.log('入口')
+    // console.log(details)
+    console.log('==============')
+    details.map((item, index) => console.log(`Page${index}: http://localhost:3100/${item.prefixname}.html`))
+    // console.log(entries)
+    console.log('==============\n\n\n')
+
 
     return {
         details: details,

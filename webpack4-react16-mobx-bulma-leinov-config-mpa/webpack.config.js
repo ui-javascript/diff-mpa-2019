@@ -17,7 +17,7 @@ const createHtml = require("./config/create-html");// html配置
 
 const config = require("./config")
 const getEntry = require("./config/get-entry");
-const entry = getEntry(config.systemEntries);
+const entry = getEntry(config.entries);
 // const entry = getEntry("./_pages/{todo,index}/*.js");
 const htmlArr = createHtml(entry.details);
 
@@ -71,13 +71,13 @@ module.exports = (env, argv) => ({
     },
     devServer: {
         port: 3100,
-        open: true,
+        open: false,
     },
     resolve: {
         alias: {
-            src: path.resolve(__dirname, "src/"),
+            src: path.resolve(__dirname, "src"),
+            '@': path.resolve(__dirname, "src"),
             components: path.resolve(__dirname, "src/components/"),
-            '@': path.resolve(__dirname, "src/components/"),
             store: path.resolve(__dirname, "src/store/"),
         }
     },

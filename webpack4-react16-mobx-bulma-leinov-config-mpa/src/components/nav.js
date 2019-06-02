@@ -11,7 +11,7 @@ export default class Nav extends Component {
                 <div className="columns column nav is-8">
                     <div className="nav-item"><a href="/">Home</a></div>
                     <div className="nav-item"><a href="/index-page2.html">Page2</a></div>
-                    <div className="nav-item"><a href="/todo-index.html">Todo</a></div>
+                    <div className="nav-item"><a href="/todo.html">Todo</a></div>
                     {/*<div className="nav-item"><a href="https://github.com/leinov/webpack-react-multi-page/">Github</a></div>*/}
                 </div>
                 <div className="column is-2"></div>

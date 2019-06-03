@@ -7,8 +7,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import {Provider} from "react-redux";
-import configStore from "store/index.js";
-import App from "./assets/app.js";
+import configStore from "./store/index.js";
+import App from "./app/App";
+
+import "@/styles/common.scss";
 import "./assets/index.scss";
 
 const store = configStore();

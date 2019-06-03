@@ -14,7 +14,7 @@ var port = "3118";
 const opn = require("opn");
 
 const config = require("./config")
-const getEntry = require("./config/get-entry");
+const getEntry = require("./build/get-entry");
 const entry = getEntry(config.system);
 
 //启动压缩

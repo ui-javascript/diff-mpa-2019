@@ -6,7 +6,7 @@
  ********************/
 
 import {createStore, applyMiddleware, compose} from "redux";
-import todoList from "./reducer/index";
+import todoList from "./reducer";
 
 console.log(process.env.NODE_ENV);
 export default function configStore() {

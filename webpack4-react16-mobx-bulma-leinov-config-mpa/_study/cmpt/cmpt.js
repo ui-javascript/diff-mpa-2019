@@ -7,7 +7,7 @@
 // import React from "react"
 import * as React from 'react'
 import ReactDOM from "react-dom"
-import 'src/common.scss'
+import '@/styles/common.scss'
 
 class Child extends React.Component {
 

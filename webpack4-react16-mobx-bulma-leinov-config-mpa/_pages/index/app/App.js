@@ -6,12 +6,14 @@
  *******************************/
 
 import React, {Component} from "react";
-import Footer from "components/footer"
+import Nav from "@/components/Nav";
+import Footer from "@/components/footer"
 
 export default class App extends Component {
     render() {
         return (
             <div>
+                <Nav/>
                 <div className="main index column is-8">
                     <h1 className="title">React multi page app</h1>
                     <p>Webpack is widely used for single-page packaging.Scaffolding, led by create-react-app, is

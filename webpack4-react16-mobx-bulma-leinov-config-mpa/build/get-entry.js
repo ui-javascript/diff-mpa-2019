@@ -14,7 +14,7 @@ const path = require("path");
  * 【获取entry文件入口】
  *
  * @param {String} path 引入根路径
- * @returns {Object} 返回的entry { "about/aoubt":"./src/about/about.js",...}
+ * @returns {Object} 返回的entry { "about/about":"./src/about/about.js",...}
  */
 function getEntry(globPath) {
 
@@ -42,15 +42,15 @@ function getEntry(globPath) {
 
             // console.log(entry, basename, prefixname, sections, modulename)
             details.push({
-                // ./_pages/index/page2.js
+                // eg--- ./_pages/index/page2.js
                 entry: entry,
-                // page2
+                // eg--- page2
                 basename: basename,
-                // index-page2
+                // eg--- index-page2
                 prefixname: prefixname,
-                // [ '_pages', 'index', 'page2.js' ]
+                // eg--- [ '_pages', 'index', 'page2.js' ]
                 sections: sections,
-                // index/page2
+                // eg--- index/page2
                 modulename: modulename
             })
 

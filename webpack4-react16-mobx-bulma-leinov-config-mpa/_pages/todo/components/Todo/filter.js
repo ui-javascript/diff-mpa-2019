@@ -3,7 +3,7 @@ import {
     SHOW_ALL,
     SHOW_COMPLETED,
     SHOW_ACTIVE,
-} from "store/actionTypes.js";
+} from "../../store/actionTypes.js";
 
 class Filter extends React.Component {
 

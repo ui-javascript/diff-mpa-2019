@@ -13,10 +13,10 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");//css分离打包
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");//js压缩
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin"); //css压缩
-const createHtml = require("./config/create-html");// html配置
+const createHtml = require("./build/create-html");// html配置
 
 const config = require("./config")
-const getEntry = require("./config/get-entry");
+const getEntry = require("./build/get-entry");
 const entry = getEntry(config.entries);
 // const entry = getEntry("./_pages/{todo,index}/*.js");
 const htmlArr = createHtml(entry.details);
@@ -77,8 +77,8 @@ module.exports = (env, argv) => ({
         alias: {
             src: path.resolve(__dirname, "src"),
             '@': path.resolve(__dirname, "src"),
-            components: path.resolve(__dirname, "src/components/"),
-            store: path.resolve(__dirname, "src/store/"),
+            // components: path.resolve(__dirname, "src/components/"),
+            // store: path.resolve(__dirname, "src/store/"),
         }
     },
     plugins: [

@@ -6,8 +6,8 @@
  *******************************/
 
 import React, {Component} from "react";
-import Nav from "components/nav";
-// import Footer from "components/footer"
+import Nav from "@/components/Nav";
+// import Footer from "@/components/footer"
 
 // 自定义组件
 class HelloMessage extends React.Component {

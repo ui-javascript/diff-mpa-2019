@@ -45,8 +45,12 @@ function createHtml(details) {
 
     details.map((item) => {
 
-        // console.log(`${item.sections[0]}/${item.sections[0]}/${item.basename}.json`)
+        // console.log(`${item.sections[0]}/${item.sections[1]}/${item.basename}.json`)
         let infoData = getInfoData(`./${item.sections[0]}/${item.sections[1]}/${item.basename}.json`)
+
+        // 判断是否写入模板
+        let template = `${item.sections[0]}/${item.sections[1]}/${item.basename}.html`
+        template = fs.existsSync(template) ? template : "./public/template.html"
 
         htmlArr.push(new HtmlWebpackPlugin({
             title: infoData.title,
@@ -56,7 +60,7 @@ function createHtml(details) {
             },
             // 引入的js
             chunks: [`${item.modulename}`],
-            template: "./public/template.html",
+            template,
             // @nice 便于直接访问index.html
             filename: item.modulename == "index/index" ? "index.html" : `${item.prefixname}.html`, //html位置
             minify: {//压缩html

@@ -2,7 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom"
 // import PropTypes from 'prop-types'
 
-import 'src/common.scss'
+import '@/styles/common.scss'
 
 class Button extends React.Component {
     render() {

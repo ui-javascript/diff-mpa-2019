@@ -8,21 +8,23 @@
 import React from "react";
 import {connect} from "react-redux";
 import utils from 'src/utils'
-import AddTodo from "components/todo/add-todo";
-import TodoList from "components/todo/todo-list";
-import Filter from "components/todo/filter";
-import Footer from "components/footer"
+import AddTodo from "../components/Todo/add-todo";
+import TodoList from "../components/Todo/todo-list";
+import Filter from "../components/Todo/filter";
+import Footer from "@/components/footer"
 
 import {
     addTodo,
     toggleTodo,
     deleteTodo
-} from "store/action/todoAction";
+} from "../store/action/todoAction";
+
 import {
     filtAction,
     filterTodo
-} from 'store/action/filtAction'
-import Nav from "components/nav";
+} from '../store/action/filtAction'
+
+import Nav from "@/components/Nav";
 
 class App extends React.Component {
     constructor(props) {
@@ -72,6 +74,7 @@ class App extends React.Component {
         return (
             <div>
                 <Nav/>
+
                 <div className="main todo column is-8">
                     <h1 className="title"> {utils.getDate("-")} todo list</h1>
                     <AddTodo
@@ -100,6 +103,7 @@ const mapStatesToProps = (state) => ({
     todoCopy: state.todoList
 });
 
+//
 export default connect(
     mapStatesToProps
 )(App);

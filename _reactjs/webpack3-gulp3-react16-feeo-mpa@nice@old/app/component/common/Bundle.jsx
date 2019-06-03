@@ -9,11 +9,11 @@ class Bundle extends React.Component {
         mod: null
     };
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.load(this.props)
     }
 
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (nextProps.load !== this.props.load) {
             this.load(nextProps)
         }

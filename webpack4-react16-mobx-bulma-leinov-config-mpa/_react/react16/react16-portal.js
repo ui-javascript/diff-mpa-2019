@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import AppPortal from "./assets/AppPortal";
+import AppPortal from "./app/AppPortal";
 import "./assets/index.scss";
 
 console.log('hello portal')

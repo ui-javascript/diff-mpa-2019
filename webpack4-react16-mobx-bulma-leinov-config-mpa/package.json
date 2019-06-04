@@ -40,12 +40,18 @@
     "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
+    "76": "^0.0.4",
     "bulma": "^0.7.1",
+    "echarts": "^4.2.1",
+    "echarts-for-react": "^2.0.15-beta.0",
+    "echarts-gl": "^1.1.1",
     "express": "^4.16.3",
     "mobx": "^5.8.0",
     "mobx-react": "^5.4.3",
     "opn": "^5.4.0",
     "react": "^16.7.0",
+    "react-amap": "^1.2.8",
+    "react-amap-plugin-heatmap": "^0.0.7",
     "react-cache": "^2.0.0-alpha.1",
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",

@@ -4,7 +4,7 @@
 import React from "react";
 import { hot } from "react-hot-loader/root";
 import { HashRouter as Router, Route, Redirect } from "react-router-dom";
-import AsyncComponent from "@/Components/AsyncComponent";
+import AsyncComponent from "@/components/AsyncComponent";
 import Main from "./Main";
 
 const Index = () => (

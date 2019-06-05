@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* CSS Document */
+/*全局控制*/
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: 0;
+  color: #2c3e50;
+  background: #F4F8F9;
+  font-size: 14px;
+}
+
+#app {
+  height: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  line-height: 1.428571429;
+  height: 100%;
+}
+
+h3,
+ul,
+li,
+p,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*全局公共样式控制*/
+a:link,
+a:hover {
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  list-style: none;
+  text-decoration: none;
+}
+
+ul,
+ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+a:focus {
+  /*去掉边框虚线*/
+  outline: none;
+  -moz-outline: none;
+}

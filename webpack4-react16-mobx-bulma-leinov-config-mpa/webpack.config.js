@@ -18,7 +18,6 @@ const createHtml = require("./build/create-html");// html配置
 const config = require("./config")
 const getEntry = require("./build/get-entry");
 const entry = getEntry(config.entries);
-// const entry = getEntry("./_pages/{todo,index}/*.js");
 const htmlArr = createHtml(entry.details);
 
 //主配置
@@ -75,7 +74,7 @@ module.exports = (env, argv) => ({
     },
     resolve: {
         alias: {
-            src: path.resolve(__dirname, "src"),
+            // src: path.resolve(__dirname, "src"),
             '@': path.resolve(__dirname, "src"),
             // components: path.resolve(__dirname, "src/components/"),
             // store: path.resolve(__dirname, "src/store/"),

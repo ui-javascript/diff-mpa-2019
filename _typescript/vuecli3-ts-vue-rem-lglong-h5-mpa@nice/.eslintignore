@@ -1,0 +1,4 @@
+dist
+tsc
+public/index.html
+tj.min.js

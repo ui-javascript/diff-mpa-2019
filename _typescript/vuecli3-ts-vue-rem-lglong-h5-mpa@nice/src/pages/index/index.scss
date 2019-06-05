@@ -1,0 +1,75 @@
+@import "../../styles/variables.scss";
+
+.home {
+    .card {
+        margin: 0.5rem;
+        border: 1px solid $color_border;
+        border-radius: 3px;
+        background-color: #fff;
+        font-size: 0.8rem;
+        >.title {
+			@extend %border-bottom;
+			padding: 0.5rem 0.6rem .25rem;
+            color: $color_font_mid;
+        }
+        .content {
+            padding: 0.5rem;
+        }
+    }
+    .recommend {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+				flex-basis: 31%;
+				text-align: center;
+				.img{
+					height: 0;
+					margin-bottom:.5rem; 
+					padding-bottom: 130%;
+					background-repeat: no-repeat;
+					background-size: cover;
+				}
+            }
+        }
+	}
+	.recent-update{
+        .content {
+			li{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				flex-wrap: nowrap;
+				padding: .3rem 0;
+				border-bottom: 1px dotted $color_border_light;
+				font-size: 1rem;
+				color: $color_font_light;
+				div{
+					line-height: 1.2rem;
+				}
+				.createdAt{
+					float: right;
+					font-size: .8rem;
+					i{
+						color: $color_org;
+					}
+				}
+				.title{
+					color: $color_font_std;
+				}
+				.summary{
+					width: 100%;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					word-break: break-all;
+					text-indent: .5rem;
+					font-size: .8rem;
+					margin-top:.3rem;
+					line-height: 1.5;
+				}
+			}
+			
+		}
+    }
+}

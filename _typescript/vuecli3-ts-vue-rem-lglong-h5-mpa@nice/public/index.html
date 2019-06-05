@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+	<title>MoFunc_Book</title>
+	<style>
+		html {
+			font-size: 16px;
+		}
+		body,html{ margin: 0;padding:0;height: 100vh;width:100vw;}
+		@media screen and (min-width: 375px) {
+			html {
+				/* iPhone6的375px尺寸作为16px基准，414px正好18px大小, 600 20px */
+				font-size: calc(100% + 2 * (100vw - 375px) / 39);
+				font-size: calc(16px + 2 * (100vw - 375px) / 39);
+			}
+		}
+		@media screen and (min-width: 414px) {
+			html {
+				/* 414px-1000px每100像素宽字体增加1px(18px-22px) */
+				font-size: calc(112.5% + 4 * (100vw - 414px) / 586);
+				font-size: calc(18px + 4 * (100vw - 414px) / 586);
+			}
+		}
+		@media screen and (min-width: 600px) {
+			html {
+				/* 600px-1000px每100像素宽字体增加1px(20px-24px) */
+				font-size: calc(125% + 4 * (100vw - 600px) / 400);
+				font-size: calc(20px + 4 * (100vw - 600px) / 400);
+			}
+		}
+		@media screen and (min-width: 1000px) {
+			html {
+				/* 1000px往后是每100像素0.5px增加 */
+				font-size: calc(137.5% + 6 * (100vw - 1000px) / 1000);
+				font-size: calc(22px + 6 * (100vw - 1000px) / 1000);
+			}
+		}
+	</style>
+	<script src="<%= BASE_URL %><%= VUE_APP_TJ %>"></script>
+  </head>
+  <body>
+	<%= VUE_APP_TRACE %>
+    <noscript>
+      <strong>We're sorry but multi-pages doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+	<div style="height:100vh;margin:0 auto;display: flex;flex-direction: column;align-items: center;justify-content: space-around;" id="app">
+		<!-- built files will be auto injected -->
+		<style>
+			.mask {
+				font-size: 1.4rem;
+				font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+				text-align: center;
+				background-image: -webkit-linear-gradient(left, #147B96, #E6D205 25%, #147B96 50%, #E6D205 75%,
+					#147B96);
+				-webkit-text-fill-color: transparent;
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-background-size: 200% 100%;
+				-webkit-animation: mask-animation 2s infinite linear;
+				background-size: 200% 100%;
+				animation: mask-animation 2s infinite linear;
+			}
+			@keyframes mask-animation { 0% { background-position: 0 0; } 100% { background-position: -100% 0; } }
+			@keyframes rotate { 0% { transform: rotate(0); } 100% { transform: rotate(360deg); } }
+		</style>
+		<div>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6rem" height="6rem" x="0px" y="0px"
+			viewBox="0 0 620 620" style="enable-background:new 0 0 620 620">
+				<g id="dot">
+					<path style="fill:#8ED6FB;" d="M346,57.33c5.85,10.08,0.57,24.83-2,32c-4.99,13.93-13.93,22.14-19,26.67
+						c-2.21,1.97-10.69,9.33-24.33,14.67c-11.33,4.43-26.1,10.11-41.34,4.66c-14.75-5.27-29.8-20.46-29.33-38
+						c0.45-17.06,15.36-28.09,23.33-34C284.33,40.39,334.68,37.83,346,57.33z"/>
+				</g>
+				<g id="line" style="transform: translateX(59px) translateY(20px);">
+					<path style="fill:#8ED6FB;" d="M447.33,180c7.76,12.8-4,40-4,40s-24.79-1.21-47.33-6c3.51-10.23,8.49-12.32,7.33-19.33
+						c-1.16-7.01-4.4-7.43-6-8.67c-15.77-2.11-36.42-4.16-60.66-4.67c-0.74-0.01-1.64-0.03-2.71-0.04
+						c-41.03-0.57-85.29,5.38-85.29,5.38C211.46,191.7,179.43,196.04,146,210c-15.93,6.65-26.03,10.87-37.33,20.67
+						c-15.05,13.04-16.8,22.61-26,23.33c-14.01,1.1-28.54-19.6-32.67-37.33c-1.34-5.76-4.31-18.89,2.67-30
+						c1.8-2.88,6.44-9.07,28.66-16.67c26.66-7.37,60.01-16.07,107.34-20c47.32-3.93,94.84-2.74,124.66,0
+						C358.48,154.14,440.08,168.04,447.33,180z"/>
+				</g>
+				<g id="main" style="transform: translateX(59px) translateY(30px);">
+					<path style="fill:#8ED6FB;" d="M448,229.301c-62.667-7.968-94.667-10.635-153.333-7.968S200,232.751,151.333,254.042
+						S72,336,72,365.333C68.667,394,72,428,90,452c10.667,22.667,52,48,79.333,51.333s46.035-0.365,69.333-13.333s52-28.667,86-67.333
+						s48.889-69.333,73.333-104c9.778-18.667,29.333-56,29.333-56S501.333,300,552,317.333v-66C552,251.333,510.667,237.269,448,229.301
+						z M307.333,376c-31.333,41.333-60,79.333-111.333,92.667s-81.333-36-68.667-76.667s38.667-83.333,76-104.667S282,262,282,262
+						s80-18,92-3.333C377.333,270,338.667,334.667,307.333,376z"/>
+				</g>
+				<g id="circle-bg">
+						<circle fill="none" stroke="#fff" stroke-width="30" cx="310" cy="310" r="290"/>
+					</g>
+				<g id="circle-op" style="opacity:.3">
+					<circle fill="none" stroke="#8ED6FB" stroke-width="30" cx="310" cy="310" r="290"/>
+				</g>
+				<g style="transform-origin: 50% 50%;animation: rotate 1.5s infinite linear;">
+					<circle fill="none" stroke="none" stroke-width="30" cx="310" cy="310" r="290"/>
+					<path fill="none" stroke="#8ED6FB" stroke-width="30" d="
+					M 310, 310 
+					m -290,0 
+					a 290,290 0 0,1 145,-250
+					"/>
+					<animateTransform attributeName="transform" begin="0s" dur="1.5s" type="rotate" from="0" to="360" repeatCount="indefinite"/>
+				</g>
+			</svg>
+			<div class="mask" >loading...</div>
+		</div>
+	</div>
+	<script src="https://cdn.bootcss.com/lodash.js/4.17.11/lodash<%= VUE_APP_MIN %>js"></script>
+	<script src="https://cdn.bootcss.com/vue/2.5.17/vue<%= VUE_APP_MIN %>js"></script>
+	<script src="https://cdn.bootcss.com/vue-router/3.0.1/vue-router<%= VUE_APP_MIN %>js"></script>
+	<script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios<%= VUE_APP_MIN %>js"></script>
+  </body>
+</html>

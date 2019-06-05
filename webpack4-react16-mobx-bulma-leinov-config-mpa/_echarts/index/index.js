@@ -13,10 +13,11 @@ function App() {
   return (
     <div>
       <Simple/>
+      <Events/>
+
       <Api/>
       <Calendar/>
       <Dynamic/>
-      <Events/>
       <Loading/>
       <Theme/>
     </div>

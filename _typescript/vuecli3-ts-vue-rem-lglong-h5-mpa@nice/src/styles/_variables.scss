@@ -1,0 +1,17 @@
+$color_border:#ccc;
+$color_border_light:#E2E2E2;
+$color_org:#FF8040;
+$color_cyan:#1ABC9C;
+$color_cyan_light:rgb(28, 224, 185);
+$color_red:#e4393c;
+$color_bg:#F4F4F4;
+$color_bg_dark:rgb(204, 204, 204);
+$color_bg_off:#000;
+$color_bg_azure: #e7f4fe;
+$color_green:#D3FEDA;
+$color_font_std:#333;
+$color_font_mid:#666;
+$color_font_light:#999;
+%border-bottom{
+	border-bottom: 1px solid $color_border;
+}

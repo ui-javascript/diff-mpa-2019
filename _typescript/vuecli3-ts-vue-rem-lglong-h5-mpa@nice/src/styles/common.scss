@@ -1,0 +1,274 @@
+@import "./variables.scss";
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+	color: $color_font_std;
+	background-color: $color_bg;
+	@media only screen and (max-width:992px){
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $color_font_std;
+	font-size: .8rem;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h3,
+p {
+	margin: 0;
+}
+
+.clr-red{
+	color: $color_red;
+}
+
+.no-more{
+	margin: 1rem auto;
+	text-align: center;
+	color: $color_font_light;
+	font-size: .8rem;
+	.fa{
+		animation: 1s spanning linear infinite normal;
+	}
+}
+.float-right{
+	float: right;
+}
+.float-left{
+	float: left;
+}
+button.disabled {
+	cursor: not-allowed;
+	background-color: #ecf5ff;
+	color: $color_font_light;
+	&:focus {
+		outline: 0;
+	}
+}
+@keyframes spanning{
+    0%{
+           transform: rotate(0);
+    }
+    100%{
+           transform: rotate(360deg);
+    }       
+}
+
+%nowrap{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+}
+
+.app-header {
+	%common {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+		height: 2.3rem;
+	}
+
+	background-color: #fff;
+
+	header {
+		@extend %common;
+		background-color: $color_cyan;
+		color: #fff;
+
+		a {
+			color: #fff;
+			font-size: 1rem;
+		}
+
+		.right {
+			font-size: 1rem;
+			cursor: pointer;
+		}
+
+		.icon,.text {
+			flex-basis: 3rem;
+			flex-shrink: 0;
+			text-align: center;
+		}
+		.text,.text>a{
+			flex-basis: 3.5rem;
+			text-align: center;
+			font-size: .8rem;
+			.btn{
+				padding: .2rem .35rem;
+				border-radius: .1rem;
+				background: $color_cyan_light;
+			}
+		}
+		.title{
+			@extend %nowrap
+		}
+	}
+
+	.search {
+		height: 2.3rem;
+		transition: height .2s;
+		text-align: center;
+		font-size: 0;
+		overflow: hidden;
+
+		button {
+			padding: 0;
+			margin-top: .5rem;
+			background: #fff;
+			height: 1.5rem;
+			line-height: calc(1.5rem - 2px);
+			width: 15%;
+			border: 1px solid #ccc;
+			font-size: .8rem;
+			color: $color_font_mid;
+			cursor: pointer;
+			box-sizing: border-box;
+			vertical-align: bottom;
+		}
+
+		.search-btn {
+			background-color: $color_cyan;
+			border-color: $color_cyan;
+			color: #fff;
+		}
+
+		input {
+			height: 1.5rem;
+			line-height: 1.5rem;
+			width: 50%;
+			padding: 0;
+			margin: calc(0.5rem - 1px) 0 0 .6rem;
+			border: 1px solid #ccc;
+			border-right: none;
+			outline: none;
+			text-indent: .5rem;
+			font-size: .8rem;
+			color: $color_font_mid;
+			box-sizing: border-box;
+		}
+	}
+
+	nav {
+		@extend %common;
+		border-bottom: 1px solid #ccc;
+
+		a {
+			flex: 1;
+			text-align: center;
+
+			&:hover {
+				color: $color_red;
+			}
+		}
+	}
+}
+
+.app-footer {
+	text-align: center;
+	padding: 1rem 0;
+
+	a {
+		margin: 0 .5rem;
+
+		&:hover {
+			color: $color_red;
+		}
+	}
+}
+
+%container{
+	margin: 0.5rem;
+	border: 1px solid $color_border;
+	border-radius: 3px;
+	background-color: #fff;
+	font-size: 0.8rem;
+}
+
+.app-container {
+	@extend %container;
+}
+
+.card-list {
+	@extend %container;
+
+	>.title {
+		@extend %border-bottom;
+		padding: 0.5rem 0.6rem .25rem;
+		color: $color_font_mid;
+	}
+
+	.content {
+		padding: 0.5rem;
+
+		li {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: nowrap;
+			padding: .3rem 0;
+			border-bottom: 1px dotted $color_border_light;
+
+			h3 {
+				font-weight: normal;
+				line-height: 1.2rem;
+			}
+
+			.cover {
+				width: 2.5rem;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			.views {
+				float: right;
+				font-weight: normal;
+
+				i {
+					color: $color_org;
+				}
+			}
+
+			>div:last-child {
+				flex: 1;
+				padding-left: .5rem;
+				overflow: hidden;
+
+				.author {
+					margin: .2rem 0;
+				}
+			}
+
+			.author,
+			.summary,
+			.views {
+				color: $color_font_light;
+				font-size: .7rem;
+			}
+
+			.summary {
+				@extend %nowrap;
+				width: 100%;
+				line-height: 1.5;
+			}
+		}
+
+	}
+}

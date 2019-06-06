@@ -14,4 +14,12 @@ module.exports = {
   // entries: './_amap/{index,mouse,marker,poly}/*.js',
   entries: './_echarts/*/*.js',
   // entries: './_echarts/map/*.js',
+
+  // entries: './_g2/*/*.js',
+  // defaultTemplate: './public/template-g2.html'
+
+  /**
+   * 默认模板
+   */
+  defaultTemplate: './public/template.html',
 }

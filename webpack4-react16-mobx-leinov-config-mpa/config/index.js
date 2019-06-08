@@ -14,10 +14,10 @@ module.exports = {
   // entries: './_amap/*/*.js',
   // entries: './_amap/{index,mouse,marker,poly}/*.js',
   // entries: './_echarts/*/*.js',
-  // entries: './_echarts/map/*.js',
+  entries: './_echarts/map/*.js',
   // entries: './_echarts/extensions/*.js',
   // entries: './_echarts/draw/*.js',
-  entries: './_echarts/chart-pie/*.js',
+  // entries: './_echarts/chart-pie/*.js',
   // entries: './_echarts/gl/*.js',
   // entries: './_echarts/native/*.js',
 

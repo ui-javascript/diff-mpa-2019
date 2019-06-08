@@ -57,7 +57,7 @@ export default class Gcalendar extends PureComponent {
     return (
       <div className='examples'>
         <div className='parent'>
-          <label> render a calendar like github commit history. </label>
+          {/*<label> render a calendar like github commit history. </label>*/}
           <ReactEcharts
             option={this.getOption()}
             style={{height: '500px', width: '100%'}}

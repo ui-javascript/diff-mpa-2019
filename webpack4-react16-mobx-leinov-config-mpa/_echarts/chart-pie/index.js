@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import echarts from "echarts"
-import ReactEcharts from 'echarts-for-react';
-import d3 from "d3"
+import ReactEcharts from 'echarts-for-react'
+
+var d3 = require("d3")
 
 var data = {
   name: "基础数据资源",

@@ -64,9 +64,13 @@ export default class ZheJiang extends Component {
         left: 'left',
         top: 'bottom',
         // 文本，默认为数值文本
-        text: ['高', '低'],
+        // text: ['高', '低'],
         calculable: true,
         show: false,
+        textStyle: {
+          color: '#fff',
+          fontSize: 40
+        },
       },
       // toolbox: {
       //   show: true,
@@ -85,6 +89,10 @@ export default class ZheJiang extends Component {
           type: 'map',
           mapType: '浙江',
           roam: false,
+          textStyle: {
+            color: '#fff',
+            fontSize: 40
+          },
           label: {
             normal: {
               show: true

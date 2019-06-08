@@ -15,11 +15,15 @@ module.exports = {
   // entries: './_amap/{index,mouse,marker,poly}/*.js',
   // entries: './_echarts/*/*.js',
   // entries: './_echarts/map/*.js',
-  // entries: './_echarts/river/*.js',
+  // entries: './_echarts/extensions/*.js',
+  // entries: './_echarts/draw/*.js',
+  entries: './_echarts/chart-pie/*.js',
+  // entries: './_echarts/gl/*.js',
+  // entries: './_echarts/native/*.js',
 
   // entries: './_g2/*/*.js',
   // defaultTemplate: './public/template-g2.html'
-  entries: './_mobx/*/*.js',
+  // entries: './_mobx/*/*.js',
 
   /**
    * 默认模板

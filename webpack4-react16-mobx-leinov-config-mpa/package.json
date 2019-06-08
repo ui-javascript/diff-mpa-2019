@@ -13,6 +13,7 @@
   "author": "leinov",
   "license": "MIT",
   "devDependencies": {
+    "76": "^0.0.4",
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/plugin-proposal-decorators": "^7.4.4",
@@ -32,6 +33,7 @@
     "mini-css-extract-plugin": "^0.4.3",
     "mobx-react-devtools": "^6.1.1",
     "node-sass": "^4.9.3",
+    "opn": "^5.4.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
@@ -40,15 +42,15 @@
     "url-loader": "^1.1.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9",
-    "76": "^0.0.4",
-    "opn": "^5.4.0"
+    "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
     "bulma": "^0.7.1",
+    "d3": "^5.9.2",
     "echarts": "^4.2.1",
     "echarts-for-react": "^2.0.15-beta.0",
     "echarts-gl": "^1.1.1",
+    "echarts-liquidfill": "^2.0.5",
     "express": "^4.16.3",
     "immutable": "^4.0.0-rc.12",
     "mobx": "^5.8.0",

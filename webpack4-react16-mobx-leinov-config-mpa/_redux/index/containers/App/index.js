@@ -1,15 +1,11 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
+import React, {Component} from "react";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {bindActionCreators} from "redux";
+import {connect} from "react-redux";
 import asyncComponent from "../../utils/AsyncComponent";
 import ModalDialog from "../../components/ModalDialog";
 import Loading from "../../components/Loading";
-import {
-  actions as appActions,
-  getError,
-  getRequestQuantity
-} from "../../redux/modules/app";
+import {actions as appActions, getError, getRequestQuantity} from "../../redux/modules/app";
 import connectRoute from "../../utils/connectRoute";
 
 const AsyncHome = connectRoute(asyncComponent(() => import("../Home")));

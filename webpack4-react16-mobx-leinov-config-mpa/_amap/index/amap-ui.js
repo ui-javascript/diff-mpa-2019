@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import { Map } from 'react-amap';
 import {CONSTANTS} from "@/utils/constants";
 
 class UIMarker extends React.Component {
+
   constructor() {
     super();
     this.loadUI();
@@ -17,6 +19,7 @@ class UIMarker extends React.Component {
 
   initPage(SimpleMarker) {
     const map = this.props.__map__;
+
     // 这个例子来自官方文档 http://lbs.amap.com/api/javascript-api/guide/amap-ui/intro
     new SimpleMarker({
       //前景文字
@@ -49,18 +52,23 @@ class UIMarker extends React.Component {
     });
   }
 
+  // ??
   render() {
     return null;
   }
 }
 
 function App  () {
-  return <div style={{width: '100%', height: '400px'}}>
+  return (<div style={{width: '100%', height: '400px'}}>
     <Map
       amapkey={CONSTANTS.AMAP_KEY}
-      zoom={6} center={[120, 30]} useAMapUI >
+      zoom={6}
+      center={[120, 30]}
+      useAMapUI >
+
       <UIMarker/>
-    </Map></div>
+    </Map>
+  </div>)
 }
 
 

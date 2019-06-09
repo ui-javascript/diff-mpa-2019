@@ -12,6 +12,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");//css分离打包
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");//js压缩
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin"); //css压缩
 const createHtml = require("./build/create-html");// html配置
 
@@ -71,6 +72,7 @@ module.exports = (env, argv) => ({
     devServer: {
         port: 3100,
         open: false,
+        quiet: true,
     },
     resolve: {
         alias: {
@@ -81,11 +83,23 @@ module.exports = (env, argv) => ({
         }
     },
     plugins: [
-        ...htmlArr, // html插件数组
-        new MiniCssExtractPlugin({ //分离css插件
+      // html插件数组
+        ...htmlArr,
+      //分离css插件
+        new MiniCssExtractPlugin({
             filename: "static/[name].[hash:7].css",
             chunkFilename: "static/[id].[hash:7].css"
-        })
+        }),
+        // 临时配置下, 别瞎输出
+        new FriendlyErrorsWebpackPlugin({
+          compilationSuccessInfo: {
+            // messages: [`Your application is running here: http://${config.dev.host}:${config.dev.port}`],
+          },
+          // onErrors: config.dev.notifyOnErrors
+          //   ? utils.createNotifierCallback()
+          //   : undefined,
+          clearConsole: true,
+        }),
     ],
     optimization: {
         minimizer: [//压缩js

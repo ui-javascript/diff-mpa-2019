@@ -5,3 +5,8 @@
 - 匹配入口: 目录下的首字母非大写的*.js
 - 样式一律用scss
 - config/index.js里具体设置
+
+
+# TODO
+
+- 多个项目各自的static路径

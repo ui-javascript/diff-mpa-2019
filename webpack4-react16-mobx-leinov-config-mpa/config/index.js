@@ -25,6 +25,7 @@ module.exports = {
   // entries: './_g2/*/*.js',
   // defaultTemplate: './public/template-g2.html'
   // entries: './_mobx/*/*.js',
+  entries: './_rmind/*/*.js',
 
   /**
    * 默认模板

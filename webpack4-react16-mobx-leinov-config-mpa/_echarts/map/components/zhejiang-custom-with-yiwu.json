@@ -2873,6 +2873,27 @@
         "name": "丽水市",
         "childNum": 1
       }
+    },
+    {
+      "id": "330782",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": ["@@TU|FQYgaz¡qiSM]©kJoMZ±qQ¯åROcKIcmÛ`MU@L^AVVRRlXRdl{¤DTWhHå¦cJNt¦fPXXPHLJN`InPwP\\t`^rZPPZnP\\|``JTVtX~pS"],
+        "encodeOffsets": [
+          [
+            123129,
+            30218
+          ]
+        ]
+      },
+      "properties": {
+        "cp": [
+          120.06683,
+          29.301369
+        ],
+        "name": "义乌市",
+        "childNum": 1
+      }
     }
   ],
   "UTF8Encoding": true

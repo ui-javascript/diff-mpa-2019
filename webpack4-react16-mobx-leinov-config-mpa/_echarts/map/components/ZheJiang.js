@@ -9,7 +9,7 @@ import ReactEcharts from 'echarts-for-react';
 // const geoJson = require('./330700.json')
 // echarts.registerMap('JH', geoJson);
 
-const geoJson = require('./zhejiang.json');
+const geoJson = require('./zhejiang-custom-with-yiwu.json');
 echarts.registerMap('ZJ', geoJson);
 
 
@@ -131,6 +131,11 @@ export default class ZheJiang extends Component {
             {name: '台州市', value: this.randomData()},
             {name: '丽水市', value: this.randomData()},
             {name: '舟山市', value: this.randomData()},
+            {
+              name: '义乌市',
+              value: this.randomData(),
+              zIndex: 100
+            },
           ]
         },
         // {

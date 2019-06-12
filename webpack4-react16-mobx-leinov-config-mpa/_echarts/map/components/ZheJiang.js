@@ -3,10 +3,15 @@ import echarts from "echarts"
 import ReactEcharts from 'echarts-for-react';
 
 // 加载中国
-require('echarts/map/js/province/zhejiang.js');
-const geoJson = require('./330700.json')
+// require('echarts/map/js/province/zhejiang.js');
+// require('echarts/map/json/province/zhejiang.json');
 
-echarts.registerMap('yiwu', geoJson);
+// const geoJson = require('./330700.json')
+// echarts.registerMap('JH', geoJson);
+
+const geoJson = require('./zhejiang.json');
+echarts.registerMap('ZJ', geoJson);
+
 
 export default class ZheJiang extends Component {
 
@@ -76,6 +81,12 @@ export default class ZheJiang extends Component {
           fontSize: 40
         },
       },
+      geo: {
+        nameMap: {
+          '义乌市' : '义乌市'
+        }
+      },
+
       // toolbox: {
       //   show: true,
       //   orient: 'vertical',
@@ -91,7 +102,8 @@ export default class ZheJiang extends Component {
         {
           name: 'iphone3',
           type: 'map',
-          mapType: '浙江',
+          // mapType: '浙江',
+          mapType: 'ZJ',
           roam: false,
           textStyle: {
             color: '#fff',
@@ -119,7 +131,6 @@ export default class ZheJiang extends Component {
             {name: '台州市', value: this.randomData()},
             {name: '丽水市', value: this.randomData()},
             {name: '舟山市', value: this.randomData()},
-            {name: 'yiwu', value: this.randomData()},
           ]
         },
         // {
@@ -154,16 +165,9 @@ export default class ZheJiang extends Component {
 
   render() {
 
-    return (
-      <div className='examples'>
-        <div className='parent'>
-          <ReactEcharts
-            option={this.state.option}
-            style={{height: '500px', width: '100%'}}
-            className='react_for_echarts'/>
-
-        </div>
-      </div>
-    );
+    return (<ReactEcharts
+        option={this.state.option}
+        style={{height: '500px', width: '100%'}}
+        className='react_for_echarts'/>);
   };
 }

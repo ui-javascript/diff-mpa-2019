@@ -11,9 +11,10 @@ module.exports = {
   // entries: './_redux/*/*.js',
   // entries: './_react/hooks/*.js',
   // entries: './_react/{cmpt,react16}/*.js',
-  entries: './_amap/*/*.js',
+  // entries: './_amap/*/*.js',
   // entries: './_amap/province/*.js',
   // entries: './_amap/{index,mouse,marker,poly}/*.js',
+  entries: './_amap-native/*/*.js',
   // entries: './_echarts/*/*.js',
   // entries: './_echarts/map/*.js',
   // entries: './_echarts/extensions/*.js',
@@ -25,7 +26,7 @@ module.exports = {
   // entries: './_g2/*/*.js',
   // defaultTemplate: './public/template-g2.html'
   // entries: './_mobx/*/*.js',
-  entries: './_rmind/*/*.js',
+  // entries: './_rmind/*/*.js',
 
   /**
    * 默认模板

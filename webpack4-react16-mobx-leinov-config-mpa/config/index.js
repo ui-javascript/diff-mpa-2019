@@ -16,7 +16,7 @@ module.exports = {
   // entries: './_amap/{index,mouse,marker,poly}/*.js',
   // entries: './_amap-native/*/*.js',
   // entries: './_echarts/*/*.js',
-  entries: './_echarts/map/*.js',
+  // entries: './_echarts/map/*.js',
   // entries: './_echarts/extensions/*.js',
   // entries: './_echarts/draw/*.js',
   // entries: './_echarts/chart-pie/*.js',
@@ -27,6 +27,9 @@ module.exports = {
   // defaultTemplate: './public/template-g2.html'
   // entries: './_mobx/*/*.js',
   // entries: './_rmind/*/*.js',
+
+
+  entries: './_typography/*/*.js',
 
   /**
    * 默认模板

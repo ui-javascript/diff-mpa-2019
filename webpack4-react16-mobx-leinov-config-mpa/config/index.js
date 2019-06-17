@@ -24,12 +24,17 @@ module.exports = {
   // entries: './_echarts/native/*.js',
 
   // entries: './_g2/*/*.js',
+  // entries: './_g2/index/*.js',
+  // entries: './_g2/faq/*.js',
+  // entries: './_g2/bizCharts/*.js',
   // defaultTemplate: './public/template-g2.html'
   // entries: './_mobx/*/*.js',
   // entries: './_rmind/*/*.js',
 
 
-  entries: './_typography/*/*.js',
+  // entries: './_typography/*/*.js',
+
+  entries: './_cmpts/*/*.js',
 
   /**
    * 默认模板

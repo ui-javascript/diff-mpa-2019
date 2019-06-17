@@ -45,6 +45,9 @@
     "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
+    "@antv/data-set": "^0.10.2",
+    "@antv/g2": "^3.5.7",
+    "bizcharts": "^3.5.4",
     "bulma": "^0.7.1",
     "d3": "^5.9.2",
     "echarts": "^4.2.1",
@@ -54,6 +57,8 @@
     "emotion": "^10.0.9",
     "express": "^4.16.3",
     "friendly-errors-webpack-plugin": "^1.7.0",
+    "g2": "^2.3.13",
+    "g2-react": "^1.3.2",
     "html2canvas": "^1.0.0-rc.3",
     "immutable": "^4.0.0-rc.12",
     "md5": "^2.2.1",
@@ -68,6 +73,7 @@
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
     "react-router-dom": "^5.0.1",
+    "react-scrollbar": "^0.5.6",
     "redux": "^4.0.1",
     "redux-immutable": "^4.0.0",
     "redux-thunk": "^2.3.0",

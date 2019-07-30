@@ -29,12 +29,15 @@ module.exports = {
   // entries: './_g2/bizCharts/*.js',
   // defaultTemplate: './public/template-g2.html'
   // entries: './_mobx/*/*.js',
+  entries: './_mobx/todo/todo-mobx.js',
   // entries: './_rmind/*/*.js',
 
 
   // entries: './_typography/*/*.js',
 
-  entries: './_cmpts/*/*.js',
+  // entries: './_cmpts/*/*.js',
+
+  entries: './_pdf/react2print/*.js',
 
   /**
    * 默认模板

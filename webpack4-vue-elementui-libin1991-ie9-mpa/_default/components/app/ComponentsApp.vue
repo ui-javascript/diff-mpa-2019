@@ -2,7 +2,11 @@
 	<div class="index">
         hello world 22222
 
-        <v-distpicker province="广东省" city="广州市" area="海珠区"></v-distpicker>
+        <v-distpicker
+            province="广东省"
+            city="广州市"
+            area="海珠区"
+        ></v-distpicker>
 
         <!--<vueCropper-->
                 <!--ref="cropper"-->
@@ -15,7 +19,7 @@
 </template>
 
 <script>
-    import { VueCropper }  from 'vue-cropper'
+    // import { VueCropper }  from 'vue-cropper'
 
 
 	export default {
@@ -28,9 +32,9 @@
                 // }
 			}
 		},
-        components: {
-            VueCropper,
-        },
+        // components: {
+        //     VueCropper,
+        // },
 		mounted() {},
 		methods: {
 

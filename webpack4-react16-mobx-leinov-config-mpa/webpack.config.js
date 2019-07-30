@@ -24,6 +24,9 @@ const htmlArr = createHtml(entry.details);
 //主配置
 module.exports = (env, argv) => ({
     entry: entry.entries,
+    // node: {
+    //   fs: "empty"
+    // },
     output: {
         path: path.join(__dirname, "dist"),
         filename: "static/[name].[hash:7].js"

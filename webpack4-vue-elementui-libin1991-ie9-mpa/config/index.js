@@ -67,7 +67,7 @@ let config = {
         env: {
             NODE_ENV: '"development"',
         },
-        port: 9527,
+        port: 9522,
     },
     // 部署配置
     deploy: {
@@ -108,7 +108,7 @@ let sysName = [
     /* element简易后台 ======== */
     // 'admin/_all',
     // 'admin/index',
-    'admin/element',
+    // 'admin/element',
     // 'admin/d2',
 
     /* vue小应用 ============== */
@@ -117,7 +117,7 @@ let sysName = [
     // 'app/notepad',
     // 'app/calculator',
     // 'app/neteasecloud',
-    // 'app/chat',
+    'app/chat',
     // 'app/map',
     // 'app/nreader',
     // 'app/bilibili',

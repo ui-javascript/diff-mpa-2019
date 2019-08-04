@@ -47,6 +47,7 @@
   "dependencies": {
     "@antv/data-set": "^0.10.2",
     "@antv/g2": "^3.5.7",
+    "antd": "^3.20.7",
     "bizcharts": "^3.5.4",
     "bulma": "^0.7.1",
     "d3": "^5.9.2",
@@ -73,6 +74,7 @@
     "react-amap-plugin-heatmap": "^0.0.7",
     "react-cache": "^2.0.0-alpha.1",
     "react-dom": "^16.7.0",
+    "react-hook-form": "^3.21.6",
     "react-redux": "^6.0.0",
     "react-router-dom": "^5.0.1",
     "react-scrollbar": "^0.5.6",

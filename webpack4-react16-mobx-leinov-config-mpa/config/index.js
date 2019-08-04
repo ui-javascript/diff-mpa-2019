@@ -11,6 +11,8 @@ module.exports = {
   // entries: './_redux/*/*.js',
   // entries: './_react/hooks/*.js',
   // entries: './_react/{cmpt,react16}/*.js',
+  // entries: './_antd/basics/*.js',
+
   // entries: './_amap/*/*.js',
   // entries: './_amap/province/*.js',
   // entries: './_amap/{index,mouse,marker,poly}/*.js',
@@ -29,7 +31,7 @@ module.exports = {
   // entries: './_g2/bizCharts/*.js',
   // defaultTemplate: './public/template-g2.html'
   // entries: './_mobx/*/*.js',
-  entries: './_mobx/todo/todo-mobx.js',
+  // entries: './_mobx/todo/todo-mobx.js',
   // entries: './_rmind/*/*.js',
 
 
@@ -37,7 +39,8 @@ module.exports = {
 
   // entries: './_cmpts/*/*.js',
 
-  entries: './_pdf/react2print/*.js',
+  // entries: './_pdf/react2print/*.js',
+  entries: './_crud/form/*.js',
 
   /**
    * 默认模板

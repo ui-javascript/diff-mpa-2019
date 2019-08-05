@@ -12,6 +12,7 @@ module.exports = {
   // entries: './_react/hooks/*.js',
   // entries: './_react/{cmpt,react16}/*.js',
   // entries: './_antd/basics/*.js',
+  entries: './_antd/table/*.js',
 
   // entries: './_amap/*/*.js',
   // entries: './_amap/province/*.js',
@@ -40,7 +41,7 @@ module.exports = {
   // entries: './_cmpts/*/*.js',
 
   // entries: './_pdf/react2print/*.js',
-  entries: './_crud/form/*.js',
+  // entries: './_crud/form/*.js',
 
   /**
    * 默认模板

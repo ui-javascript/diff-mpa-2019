@@ -5,6 +5,7 @@
   "main": "",
   "scripts": {
     "install:tyarn": "tyarn install",
+    "remove": "rimraf node_modules",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "better-npm-run build",
     "dev": "better-npm-run dev",

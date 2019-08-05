@@ -11,14 +11,14 @@ function resolve(dir) {
 let config = {
     // 系统共用
     system: {
-        // 入口生成标准 @TODO
+        // @TODO 入口生成标准
         // 1. html为准 'html'
         // 2. js为准 'js'
         // 3. html、js都要 'both'
         entryFirst: 'html',
 
-        // 是否兼容IE8
-        supportIE8: true,
+        // @deprecated 是否兼容IE8
+        supportIE8: false,
 
         // @TODO 适配
         isMobile: false,
@@ -117,7 +117,7 @@ let sysName = [
     // 'app/notepad',
     // 'app/calculator',
     // 'app/neteasecloud',
-    'app/chat',
+    // 'app/chat',
     // 'app/map',
     // 'app/nreader',
     // 'app/bilibili',

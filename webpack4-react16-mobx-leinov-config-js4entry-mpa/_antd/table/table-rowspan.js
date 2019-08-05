@@ -1,174 +1,100 @@
-import React, { Component, useState, useEffect } from "react"
+import React from "react"
 import ReactDOM from "react-dom"
 
-import moment from "moment";
+
 import { Table } from "antd";
 
-
-
-class App extends React.Component {
-  state = {
-    // 分页
-    pagination: {
-      current: 1,
-      pageSize: 10,
+const columns = [{
+  title: 'Name',
+  dataIndex: 'name',
+  key: 'name',
+  width: '40%'
+}, {
+  title: 'Age',
+  dataIndex: 'age',
+  key: 'age',
+  width: '30%',
+}, {
+  title: 'Address',
+  dataIndex: 'address',
+  key: 'address',
+  width: '30%',
+  render: (value, row, index) => {
+    const obj = {
+      children: value,
+      props: {},
+    };
+    if (value == 'New York No. 3 Lake Park') {
+      obj.props.rowSpan = 2
     }
-  };
+    return obj;
+  },
+}];
 
-  data = [
-    {
-      key: "11",
-      name: "John Brown222",
-      age: 32,
-      tel: "0571-22098909",
-      phone: 18889898989,
-      address: "New York No. 1 Lake Park"
-    },
-    {
-      key: "12",
-      name: "John Brown",
-      age: 32,
-      tel: "0571-22098909",
-      phone: 18889898989,
-      address: "New York No. 1 Lake Park"
-    },
-    {
-      key: "13",
-      name: "John Brown",
-      age: 32,
-      tel: "0571-22098909",
-      phone: 18889898989,
-      address: "New York No. 1 Lake Park"
-    },
-    {
-      key: "14",
-      name: "John Brown",
-      age: 32,
-      tel: "0571-22098909",
-      phone: 18889898989,
-      address: "New York No. 1 Lake Park"
-    },
-    {
-      key: "1",
-      name: "John Brown",
-      age: 32,
-      tel: "0571-22098909",
-      phone: 18889898989,
-      address: "New York No. 1 Lake Park"
-    },
-    {
-      key: "15",
-      name: "John Brown",
-      age: 32,
-      tel: "0571-22098909",
-      phone: 18889898989,
-      address: "New York No. 1 Lake Park"
-    },
-    {
-      key: "16",
-      name: "John Brown",
-      age: 32,
-      tel: "0571-22098909",
-      phone: 18889898989,
-      address: "New York No. 1 Lake Park"
-    },
-    {
-      key: "2",
-      name: "Jim Green",
-      tel: "0571-22098333",
-      phone: 18889898888,
+const data = [{
+  key: 1,
+  name: 'John Brown sr.',
+  age: 60,
+  address: 'New York No. 1 Lake Park',
+  children: [{
+    key: 11,
+    name: 'John Brown',
+    age: 42,
+    address: 'New York No. 2 Lake Park',
+  }, {
+    key: 12,
+    name: 'John Brown jr.',
+    age: 30,
+    address: 'New York No. 3 Lake Park',
+    children: [{
+      key: 121,
+      name: 'Jimmy Brown',
+      age: 16
+    }],
+  }, {
+    key: 13,
+    name: 'Jim Green sr.',
+    age: 72,
+    address: 'London No. 1 Lake Park',
+    children: [{
+      key: 131,
+      name: 'Jim Green',
       age: 42,
-      address: "London No. 1 Lake Park"
-    },
-    {
-      key: "3",
-      name: "Joe Black",
-      age: 32,
-      tel: "0575-22098909",
-      phone: 18900010002,
-      address: "Sidney No. 1 Lake Park"
-    },
-    {
-      key: "4",
-      name: "Jim Red",
-      age: 18,
-      tel: "0575-22098909",
-      phone: 18900010002,
-      address: "London No. 2 Lake Park"
-    },
-    {
-      key: "51",
-      name: "Jake White",
-      age: 18,
-      tel: "0575-22098909",
-      phone: 18900010002,
-      address: "Dublin No. 2 Lake Park"
-    },
-    {
-      key: "53",
-      name: "Jake White",
-      age: 18,
-      tel: "0575-22098909",
-      phone: 18900010002,
-      address: "Dublin No. 2 Lake Park"
-    },
-    {
-      key: "5",
-      name: "Jake White",
-      age: 18,
-      tel: "0575-22098909",
-      phone: 18900010002,
-      address: "Dublin No. 2 Lake Park"
-    }
-  ];
+      address: 'London No. 2 Lake Park',
+      children: [{
+        key: 1311,
+        name: 'Jim Green jr.',
+        age: 25,
+        address: 'London No. 3 Lake Park',
+      }, {
+        key: 1312,
+        name: 'Jimmy Green sr.',
+        age: 18,
+        address: 'London No. 4 Lake Park',
+      }],
+    }],
+  }],
+}, {
+  key: 2,
+  name: 'Joe Black',
+  age: 32,
+  address: 'Sidney No. 1 Lake Park',
+}];
 
-  columns = [
-    {
-      title: "Name",
-      dataIndex: "name",
-      render: (text, row, index) => {
-        return <a href="#">{text}</a>;
-      }
-    },
-    {
-      title: "Age",
-      dataIndex: "age",
-      render: value => {
-        return {
-          children: value,
-          props: {
-            rowSpan: 2
-          },
-        };
-      }
-    },
-    {
-      title: "Phone",
-      colSpan: 0,
-      dataIndex: "phone",
-    },
-    {
-      title: "Address",
-      dataIndex: "address",
-    }
-  ];
-
-  handleChange = (pagination) => {
-    this.setState({ pagination });
-  }
-
-  render() {
-    return (
-      <Table
-        columns={this.columns}
-        dataSource={this.data}
-        bordered
-        onChange={this.handleChange}
-        pagination={this.state.pagination}
-      />
-    );
-  }
-}
+// rowSelection objects indicates the need for row selection
+const rowSelection = {
+  onChange: (selectedRowKeys, selectedRows) => {
+    console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+  },
+  onSelect: (record, selected, selectedRows) => {
+    console.log(record, selected, selectedRows);
+  },
+  onSelectAll: (selected, selectedRows, changeRows) => {
+    console.log(selected, selectedRows, changeRows);
+  },
+};
 
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <Table defaultExpandAllRows={true} columns={columns} rowSelection={rowSelection} dataSource={data} />,
+  document.getElementById("root"));

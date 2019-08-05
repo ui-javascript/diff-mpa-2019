@@ -20,7 +20,7 @@ function App() {
         option={{
             backgroundColor: '#1b2735',
             title: {
-              text: 'CPU使用率22222',
+              text: 'CPU使用率',
               textStyle: {
                 fontWeight: 'normal',
                 fontSize: 25,
@@ -46,8 +46,10 @@ function App() {
               }
             }]
         }}
-        style={{height: '500px', width: '100%'}}
-        className='react_for_echarts'/>
+        // className={"w-full"}
+        style={{height: '500px'}}
+        // className='react_for_echarts'
+      />
     </div>
   );
 }

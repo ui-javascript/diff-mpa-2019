@@ -6,9 +6,10 @@ import useForm from 'react-hook-form';
 function App() {
   const { register, handleSubmit, errors } = useForm(); // initialise the hook
 
+  // callback when validation pass
   const onSubmit = data => {
     console.log(data);
-  }; // callback when validation pass
+  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -20,7 +21,10 @@ function App() {
       <input name="age" ref={register({ pattern: /\d+/ })} />
       {errors.age && 'Please enter number for age.'}
 
-      <input type="submit" />
+      <input type="submit"
+             // value={'提交'}
+      />
+
     </form>
   );
 }

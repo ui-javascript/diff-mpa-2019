@@ -12,7 +12,8 @@ module.exports = {
   // entries: './_react/hooks/*.js',
   // entries: './_react/{cmpt,react16}/*.js',
   // entries: './_antd/basics/*.js',
-  entries: './_antd/table/*.js',
+  // entries: './_antd/table/*.js',
+  entries: './_antd/model/*.js',
 
   // entries: './_amap/*/*.js',
   // entries: './_amap/province/*.js',

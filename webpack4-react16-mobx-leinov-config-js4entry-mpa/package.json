@@ -7,7 +7,7 @@
     "install:tyarn": "tyarn install",
     "remove": "rimraf node_modules",
     "dev": "webpack-dev-server --mode development --devtool inline-source-map --hot",
-    "server": "node www.js",
+    "server": "node server.js",
     "build:dist": "webpack --mode production"
   },
   "author": "leinov",

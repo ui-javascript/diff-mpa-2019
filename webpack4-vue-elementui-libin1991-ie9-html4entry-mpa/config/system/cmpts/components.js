@@ -7,22 +7,13 @@ function resolve(dir) {
 module.exports = {
     system: {
         supportIE8: false,
-        pages: "_app",
-        modules: "map",
+        pages: "_cmpts",
+        modules: "components",
         resolveAlias: {},
         externals: {
+        },
+    },
 
-        },
-    },
     build: {
-        env: {
-            NODE_ENV: '"production"',
-        },
-    },
-    dev: {
-        port: 9527,
-        env: {
-            NODE_ENV: '"development"',
-        },
-    },
+    }
 };

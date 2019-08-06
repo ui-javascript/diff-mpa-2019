@@ -7,7 +7,7 @@ function resolve(dir) {
 module.exports = {
     system: {
         supportIE8: false,
-        pages: "_app",
+        pages: "_socket",
         modules: "chat",
         resolveAlias: {},
         externals: {

@@ -5,6 +5,8 @@ const path = require('path')
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 // const vuxLoader = require('vux-loader')
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+
 
 // 配置文件
 const myConfig = require("../config/index")
@@ -140,7 +142,16 @@ let webpackConfig = {
 
     plugins: [
         new VueLoaderPlugin(),
-
+      new FriendlyErrorsWebpackPlugin({
+        compilationSuccessInfo: {
+          // messages: [`Your application is running here: http://${config.dev.host}:${config.dev.port}`],
+        },
+        // onErrors: config.dev.notifyOnErrors
+        //   ? utils.createNotifierCallback()
+        //   : undefined,
+        quiet: true,
+        clearConsole: true,
+      }),
     ],
 };
 

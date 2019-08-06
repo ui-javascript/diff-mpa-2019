@@ -103,7 +103,7 @@ let sysName = [
     // 'default/_all',
     // 'default/index',
     // 'default/bootstrap',
-    // 'default/components',
+    // 'cmpts/components',
 
     /* element简易后台 ======== */
     // 'admin/_all',
@@ -117,8 +117,8 @@ let sysName = [
     // 'app/notepad',
     // 'app/calculator',
     // 'app/neteasecloud',
-    // 'app/chat',
-    // 'app/map',
+    'socket/chat',
+    // 'map/map',
     // 'app/nreader',
     // 'app/bilibili',
     // 'app/todo',

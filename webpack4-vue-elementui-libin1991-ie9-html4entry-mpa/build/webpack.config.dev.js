@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const path = require('path')
 const merge = require('webpack-merge')
 
+
 // 常用插件
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -40,6 +41,7 @@ let webpackConfig = merge(baseWebpackConfig, {
             filename: 'static/css/[name].[hash:7].css',
             allChunks: true
         }),
+
         //自动打开浏览器
         new OpenBrowserPlugin({
             url: `http://localhost:${myConfig.dev.port}/${pageConfig[0].name}`

@@ -107,5 +107,6 @@ ReactDOM.render(
         defaultExpandAllRows
         columns={columns}
         rowSelection={rowSelection}
-        dataSource={data}/>,
+        dataSource={data}
+    />,
     document.getElementById("root"));

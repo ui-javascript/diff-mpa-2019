@@ -101,8 +101,9 @@ let sysName = [
 
     /* Vue简单示例 ============ */
     // 'default/_all',
-    // 'default/index',
+    'default/index',
     // 'default/bootstrap',
+    // 'default/_demo',
     // 'cmpts/components',
 
     /* element简易后台 ======== */
@@ -117,7 +118,7 @@ let sysName = [
     // 'app/notepad',
     // 'app/calculator',
     // 'app/neteasecloud',
-    'socket/chat',
+    // 'socket/chat',
     // 'map/map',
     // 'app/nreader',
     // 'app/bilibili',

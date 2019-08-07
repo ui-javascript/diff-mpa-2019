@@ -47,5 +47,5 @@ module.exports = {
   /**
    * 默认模板
    */
-  defaultTemplate: './public/template.html',
+  // defaultTemplate: './public/template.html',
 }

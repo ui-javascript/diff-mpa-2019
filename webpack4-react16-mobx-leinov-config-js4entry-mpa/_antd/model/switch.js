@@ -16,6 +16,7 @@ function App() {
   return (
     <div className='p-2'>
       <Switch
+        key={Math.random()}
         checkedChildren="显示到报告" unCheckedChildren="不显示"
         defaultChecked = { options.isOk ? true : false }
         onChange={handleSwitchChange }

@@ -47,6 +47,7 @@
   "dependencies": {
     "@antv/data-set": "^0.10.2",
     "@antv/g2": "^3.5.7",
+    "@babel/plugin-transform-runtime": "^7.5.5",
     "antd": "^3.20.7",
     "bizcharts": "^3.5.4",
     "browserslist": "^4.6.6",
@@ -59,6 +60,7 @@
     "echarts-liquidfill": "^2.0.5",
     "emotion": "^10.0.9",
     "express": "^4.16.3",
+    "formik": "^1.5.8",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "fs": "^0.0.1-security",
     "g2": "^2.3.13",
@@ -77,6 +79,7 @@
     "react-amap-plugin-heatmap": "^0.0.7",
     "react-cache": "^2.0.0-alpha.1",
     "react-dom": "^16.7.0",
+    "react-hanger": "^2.1.0",
     "react-hook-form": "^3.21.6",
     "react-redux": "^6.0.0",
     "react-router-dom": "^5.0.1",
@@ -85,6 +88,7 @@
     "redux": "^4.0.1",
     "redux-immutable": "^4.0.0",
     "redux-thunk": "^2.3.0",
-    "reselect": "^4.0.0"
+    "reselect": "^4.0.0",
+    "use-http": "^0.1.79"
   }
 }

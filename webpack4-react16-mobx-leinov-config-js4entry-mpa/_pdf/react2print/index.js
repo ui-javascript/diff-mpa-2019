@@ -5,6 +5,7 @@ import ReactToPrint from 'react-to-print';
 import './typo.scss'
 
 function App () {
+  const componentRef = useRef();
 
   return (
     <div>
@@ -16,18 +17,18 @@ function App () {
 
       <ReactToPrint
         // ref={el => (this.printRef = el)}
-        content={ () => this.componentRef }
+        // content={ () => this.componentRef }
 
         // hooks写法
-        // trigger={() => <button>Print this out!</button>}
-        // content={() => componentRef.current}
+        trigger={() => <button>Print this out!</button>}
+        content={() => componentRef.current}
       />
 
       <div
-        ref={el => (this.componentRef = el)}
+        // ref={el => (this.componentRef = el)}
 
         // hooks写法
-        // ref={componentRef}
+        ref={componentRef}
         className={"p-5"}
       >
 

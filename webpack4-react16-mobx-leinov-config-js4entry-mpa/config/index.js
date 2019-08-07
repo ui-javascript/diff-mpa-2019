@@ -7,13 +7,14 @@ module.exports = {
   // entries: './_pages/{index,todo}/*.js',
   // entries: './_pages/index/table.js',
   // entries: './_pages/todo/*.js',
-  // entries: './_react/reach16/*.js',
+  entries: './_react/basics/*.js',
+  // entries: './_react/react16/*.js',
   // entries: './_redux/*/*.js',
   // entries: './_react/hooks/*.js',
   // entries: './_react/{cmpt,react16}/*.js',
   // entries: './_antd/basics/*.js',
   // entries: './_antd/table/*.js',
-  entries: './_antd/model/*.js',
+  // entries: './_antd/model/*.js',
 
   // entries: './_amap/*/*.js',
   // entries: './_amap/province/*.js',
@@ -31,7 +32,8 @@ module.exports = {
   // entries: './_g2/index/*.js',
   // entries: './_g2/faq/*.js',
   // entries: './_g2/bizCharts/*.js',
-  // defaultTemplate: './public/template-g2.html'
+
+
   // entries: './_mobx/*/*.js',
   // entries: './_mobx/todo/todo-mobx.js',
   // entries: './_rmind/*/*.js',
@@ -48,4 +50,5 @@ module.exports = {
    * 默认模板
    */
   // defaultTemplate: './public/template.html',
+  // defaultTemplate: './public/template-g2.html',
 }

@@ -1,0 +1,70 @@
+<!--
+@Author: 骆金参
+@Date:   2017-03-27T11:44:46+08:00
+@Email:  1095947440@qq.com
+@Filename: tmpl-class-condition.html
+@Last modified by:   骆金参
+@Last modified time: 2017-03-27T11:48:46+08:00
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .text-danger {
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+
+        .active {
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+<div id="app">
+    <div :class="[errorClass ,isActive ? activeClass : '']"></div>
+
+    <!-- 绑定内联样式 -->
+    <div :style="{ color: activeColor, fontSize: fontSize + 'px' }">runoob</div>
+    <div :style="styleObject">runoob</div>
+    <div :style="[baseStyles, overridingStyles]">runoob</div>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            isActive: true, // green
+            activeClass: 'active',
+            errorClass: 'text-danger',
+
+            activeColor: 'green',
+            fontSize: 20,
+
+            styleObject: {
+                color: 'green',
+                fontSize: '30px'
+            },
+
+            baseStyles: {
+                color: 'green',
+                fontSize: '30px'
+            },
+            overridingStyles: {
+                'font-weight': 'bold'
+            }
+        }
+    })
+</script>
+</body>
+
+</html>

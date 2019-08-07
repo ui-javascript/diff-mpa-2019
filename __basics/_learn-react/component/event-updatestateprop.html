@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>React updateStateProp</title>
+  <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+	<script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+</head>
+
+<body>
+  <!-- 舞台DOM -->
+  <div id="example"></div>
+
+  <script type="text/babel">
+  var Content = React.createClass({
+    render: function() {
+      return (
+        <div>
+          <button onClick = { this.props.updateStateProp }>点我</button>
+          <input type="text" value={ this.props.myDataProp } onChange={this.props.updateStateProp} />
+          <h4>{this.props.myDataProp}</h4>
+        </div>
+      );
+    }
+  });
+
+  var HelloMessage = React.createClass({
+    getInitialState: function() {
+      return {value: 'Hello A!'};
+    },
+
+    handleChange: function(event) {
+      this.setState({ value: event.target.value })
+    },
+
+    render: function() {
+      var value = this.state.value;
+      return (
+        <div>
+          <Content myDataProp = {value}
+                   updateStateProp = {this.handleChange}></Content>
+        </div>
+      );
+    }
+  });
+
+  ReactDOM.render(
+    <HelloMessage />,
+    document.getElementById('example')
+  );
+  </script>
+
+</body>
+</html>

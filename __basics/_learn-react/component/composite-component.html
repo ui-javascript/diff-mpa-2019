@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>复合组件</title>
+  <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+  <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+  <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+</head>
+
+<body>
+  <!-- DOM舞台 -->
+  <div id="example"></div>
+
+  <script type="text/babel">
+    // 复合组件
+    var WebSite = React.createClass({
+      render: function() {
+        return (
+          <div>
+            <Name name={this.props.name} />
+            <Link site={this.props.site} />
+          </div>
+        );
+      }
+    });
+
+    // 子组件1
+    var Name = React.createClass({
+      render: function() {
+        return (
+          <h1>{this.props.name}</h1>
+        );
+      }
+    });
+
+    // 子组件2
+    var Link = React.createClass({
+      render: function() {
+        return (
+          <a href={this.props.site}>{this.props.site}</a>
+        );
+      }
+    });
+
+    ReactDOM.render(
+      <WebSite name="baidu" site=" http://www.baidu.com" />,
+      document.getElementById('example') );
+  </script>
+
+</body>
+
+</html>

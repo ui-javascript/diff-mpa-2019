@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>React Refs</title>
+  <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+  <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+  <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+</head>
+
+<body>
+  <!-- 舞台DOM-->
+  <div id="example"></div>
+
+  <script type="text/babel">
+    var MyComponent = React.createClass({
+      handleClick: function() {
+        this.refs.myInput.focus(); // 使用原生的 DOM API 获取焦点
+      },
+
+      render: function() {
+        // 当组件插入到 DOM 后，
+        // ref 属性添加一个组件的引用于到 this.refs
+        return (
+          <div>
+            <input type="text" ref="myInput" />
+            <input type="button" value="点我输入框获取焦点" onClick={this.handleClick} />
+          </div>
+        );
+        }
+      });
+
+    ReactDOM.render(
+      <MyComponent />,
+      document.getElementById('example') 
+    );
+  </script>
+</body>
+
+</html>

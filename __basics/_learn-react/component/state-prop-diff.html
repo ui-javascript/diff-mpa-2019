@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>state prop diff的区别</title>
+  <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+	<script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+</head>
+
+<body>
+  <!-- 舞台DOM -->
+  <div id="example"></div>
+
+  <script type="text/babel">
+    // props 是不可变的，而 state 可以根据与用户交互来改变
+    // 我们可以在父组件中设置 state, 并通过在子组件上使用 props 将其传递到子组件上
+    var WebSite = React.createClass({
+      // 初始状态
+      getInitialState: function() {
+        return {
+          name: "baidu",
+          site: "http://www.baidu.com",
+          width: "100px"
+        };
+      },
+
+      handleClick: function(event) {
+        if(this.state.name === "baidu") {
+          this.setState({name: "sogou", site:"http://www.sogou.com"});
+        } else {
+          this.setState({name: "baidu", site:"http://www.baidu.com"});          
+        }
+      },
+
+      // 这里使用的是state
+      render: function() {
+        return (
+          <div>
+            <div onClick={this.handleClick}>
+              <Name name={this.state.name} />
+            </div>
+            <Link site={this.state.site} />
+          </div>
+        );
+      }
+    });
+
+    // 子组件
+    // 使用的是props
+    var Name = React.createClass({
+      render: function() {
+        return (
+          <h1>{this.props.name}</h1>
+        );
+      }
+    });
+
+    var Link = React.createClass({
+      render: function() {
+        return (
+          <a href={this.props.site}>
+            {this.props.site}
+          </a>
+        );
+      }
+    });
+
+    ReactDOM.render(
+      <WebSite style={{ width: "200px" }}/>,
+      document.getElementById('example')
+    );
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+</head>
+
+<body>
+<div id="app">
+    <p>
+        <router-link to="/foo">Tab1</router-link>
+        <router-link to="/bar">Tab2</router-link>
+        <router-link to="/undefined">TabN</router-link>
+    </p>
+
+    <!-- 路由出口 将渲染在这里 -->
+    <router-view id="router"></router-view>
+
+</div>
+
+<script>
+    var Welcome = {
+        template: '<div>默认视图</div>'
+    }
+    var Foo = {
+        template: `
+            <div>foo</div>
+        `
+    }
+    var Bar = {
+        template: `
+            <div>
+            bar
+            </div>
+        `
+    }
+
+    var routes = [
+        {
+            path: '/foo',
+            component: Foo
+        },
+        {
+            path: '/bar',
+            component: Bar
+        },
+        {
+            path: "/*",
+            component: Welcome
+        }
+    ]
+
+    // 相当于 routes: routes
+    var router = new VueRouter({
+        routes
+    })
+
+    // 创建和挂载根实例。
+    var app = new Vue({
+        router
+    }).$mount('#app')
+
+
+</script>
+</body>
+
+</html>

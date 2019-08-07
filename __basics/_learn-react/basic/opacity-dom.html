@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>自定义</title>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+	<script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+  </head>
+ <body>
+    <div id="opacitydemo"></div>
+    <div id="skin"></div>
+
+    <script type="text/babel">
+      var Hello = React.createClass({
+        // 类似vue的data
+        getInitialState: function () {
+          return {
+            opacity: 1.0
+          };
+        },
+
+        // 在第一次渲染后调用，只在客户端
+        componentDidMount: function () {
+          // 计时器
+          this.timer = setInterval(function () {
+            var opacity = this.state.opacity;
+            opacity -= .05;
+            if (opacity < 0.1) {
+              opacity = 1.0; // 从而实现周期变化
+            }
+            this.setState({
+              opacity: opacity
+            });
+          }.bind(this), 100);
+        },
+
+        render: function () {
+          return (
+            <div style={{opacity: this.state.opacity}}>
+              Hello {this.props.name}
+            </div>
+          );
+        }
+      });
+
+      ReactDOM.render(
+        <Hello name="world"/>,
+        document.getElementById('opacitydemo')
+      );
+
+      var myStyle = { color: '#FF0000' }; // 对象
+      ReactDOM.render(
+        <h4 style={ myStyle }>skin</h4>,
+        document.getElementById('skin')
+      );
+    </script>
+  </body>
+</html>

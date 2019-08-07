@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>prop validation</title>
+  <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+	<script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+</head>
+
+<body>
+	<div id="example"></div>
+
+  <script type="text/babel">
+    // var title = "hello";
+    var title = 123;
+
+    var MyTitle = React.createClass({
+      // 指定类型
+      propTypes: {
+        title: React.PropTypes.number.isRequired,
+      },
+
+      render: function() {
+         return <h1> {this.props.title} </h1>;
+       }
+    });
+    ReactDOM.render(
+        <MyTitle title={title} />,
+        document.getElementById('example')
+    );
+  </script>
+</body>
+
+</html>

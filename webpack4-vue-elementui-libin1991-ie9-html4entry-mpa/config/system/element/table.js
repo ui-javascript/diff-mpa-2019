@@ -8,8 +8,8 @@ function resolve(dir) {
 module.exports = {
   system: {
     supportIE8: false,
-    pages: "_default",
-    modules: "_demo",
+    pages: "_element",
+    modules: "table",
     resolveAlias: {},
     externals: {},
   },

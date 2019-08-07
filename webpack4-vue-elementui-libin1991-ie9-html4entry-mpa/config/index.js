@@ -101,22 +101,21 @@ let sysName = [
 
     /* Vue简单示例 ============ */
     // 'default/_all',
-    'default/index',
+    // 'default/index',
     // 'default/bootstrap',
-    // 'default/_demo',
+    // 'demo/index',
     // 'cmpts/components',
 
     /* element简易后台 ======== */
     // 'admin/_all',
     // 'admin/index',
     // 'admin/element',
-    // 'admin/d2',
 
     /* vue小应用 ============== */
     // 'app/_all',
     // 'app/index',
     // 'app/notepad',
-    // 'app/calculator',
+    'app/calculator',
     // 'app/neteasecloud',
     // 'socket/chat',
     // 'map/map',
@@ -125,6 +124,9 @@ let sysName = [
     // 'app/todo',
     // 'app/mmplayer',
     // 'app/happyfri',
+    // 'veui/table',
+
+
 
 ][0]
 

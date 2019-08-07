@@ -22,7 +22,7 @@ module.exports = {
         },
     },
     dev: {
-        port: 9527,
+        port: 9522,
         env: {
             NODE_ENV: '"development"',
         },

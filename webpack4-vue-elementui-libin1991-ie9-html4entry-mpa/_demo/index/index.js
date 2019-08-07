@@ -1,4 +1,4 @@
-import './demo.less';
+import './index.less';
 
 import Vue from 'vue'
 import App from './App.vue'

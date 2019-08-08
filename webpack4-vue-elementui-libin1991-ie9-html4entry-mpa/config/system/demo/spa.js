@@ -7,7 +7,6 @@ function resolve(dir) {
 
 module.exports = {
   system: {
-    supportIE8: false,
     pages: "_demo",
     modules: "spa",
     resolveAlias: {},

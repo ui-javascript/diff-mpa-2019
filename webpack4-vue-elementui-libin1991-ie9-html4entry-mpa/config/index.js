@@ -103,7 +103,7 @@ let sysName = [
     // 'default/_all',
     // 'default/index',
     // 'default/bootstrap',
-    // 'demo/index',
+    // 'demo/demo',
     'demo/spa',
     // 'cmpts/components',
 

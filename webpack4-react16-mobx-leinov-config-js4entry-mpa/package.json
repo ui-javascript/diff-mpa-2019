@@ -19,6 +19,7 @@
     "@babel/plugin-proposal-decorators": "^7.4.4",
     "@babel/plugin-syntax-decorators": "^7.2.0",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
@@ -47,12 +48,11 @@
   "dependencies": {
     "@antv/data-set": "^0.10.2",
     "@antv/g2": "^3.5.7",
-    "@babel/plugin-transform-runtime": "^7.5.5",
     "antd": "^3.20.7",
     "bizcharts": "^3.5.4",
     "browserslist": "^4.6.6",
     "bulma": "^0.7.1",
-    "caniuse-lite": "^1.0.30000988",
+    "caniuse-lite": "^1.0.30000989",
     "d3": "^5.9.2",
     "echarts": "^4.2.1",
     "echarts-for-react": "^2.0.15-beta.0",
@@ -85,10 +85,16 @@
     "react-router-dom": "^5.0.1",
     "react-scrollbar": "^0.5.6",
     "react-to-print": "^2.2.1",
+    "react-use": "^10.5.0",
+    "react-use-calendar": "^1.0.0",
+    "react-use-clipboard": "0.1.4",
     "redux": "^4.0.1",
     "redux-immutable": "^4.0.0",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "use-http": "^0.1.79"
+    "use-dark-mode": "^2.3.1",
+    "use-force-update": "^1.0.7",
+    "use-http": "^0.1.79",
+    "use-undo": "^1.0.1"
   }
 }

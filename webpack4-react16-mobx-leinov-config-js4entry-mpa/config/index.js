@@ -38,9 +38,12 @@ module.exports = {
 
   // entries: './_hooks/*/*.js',
   // entries: './_hooks/basics/*.js',
-  entries: './_hooks/fetch/*.js',
+  // entries: './_hooks/storage/*.js',
+  // entries: './_hooks/fetch/*.js',
   // entries: './_hooks/form/*.js',
-  // entries: './_hooks/hanger/*.js',
+  // entries: './_hooks/picker/*.js',
+  // entries: './_hooks/utils/*.js',
+  entries: './_hooks/theme/*.js',
 
 
   // entries: './_typography/*/*.js',

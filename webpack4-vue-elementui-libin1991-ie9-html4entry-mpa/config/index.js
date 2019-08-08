@@ -104,6 +104,7 @@ let sysName = [
     // 'default/index',
     // 'default/bootstrap',
     // 'demo/index',
+    'demo/spa',
     // 'cmpts/components',
 
     /* element简易后台 ======== */
@@ -115,7 +116,7 @@ let sysName = [
     // 'app/_all',
     // 'app/index',
     // 'app/notepad',
-    'app/calculator',
+    // 'app/calculator',
     // 'app/neteasecloud',
     // 'socket/chat',
     // 'map/map',

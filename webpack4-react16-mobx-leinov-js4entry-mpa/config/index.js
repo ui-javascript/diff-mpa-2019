@@ -7,10 +7,11 @@ module.exports = {
   // entries: './_pages/{index,todo}/*.js',
   // entries: './_pages/index/table.js',
   // entries: './_pages/todo/*.js',
-  // entries: './_react/basics/*.js',
+  entries: './_react/basics/*.js',
   // entries: './_react/react16/*.js',
-  // entries: './_redux/*/*.js',
   // entries: './_react/{cmpt,react16}/*.js',
+  // entries: './_redux/*/*.js',
+
   // entries: './_antd/basics/*.js',
   // entries: './_antd/table/*.js',
   // entries: './_antd/model/*.js',
@@ -19,6 +20,7 @@ module.exports = {
   // entries: './_amap/province/*.js',
   // entries: './_amap/{index,mouse,marker,poly}/*.js',
   // entries: './_amap-native/*/*.js',
+
   // entries: './_echarts/*/*.js',
   // entries: './_echarts/map/*.js',
   // entries: './_echarts/extensions/*.js',
@@ -38,7 +40,7 @@ module.exports = {
 
   // entries: './_hooks/*/*.js',
   // entries: './_hooks/basics/*.js',
-  entries: './_hooks/rmind/*.js',
+  // entries: './_hooks/rmind/*.js',
   // entries: './_hooks/storage/*.js',
   // entries: './_hooks/fetch/*.js',
   // entries: './_hooks/form/*.js',
@@ -47,7 +49,6 @@ module.exports = {
   // entries: './_hooks/theme/*.js',
 
   // entries: './_lodash/copy/*.js',
-
 
   // entries: './_typography/*/*.js',
   // entries: './_cmpts/*/*.js',

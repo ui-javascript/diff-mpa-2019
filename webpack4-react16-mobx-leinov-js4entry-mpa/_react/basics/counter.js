@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import ReactDOM from "react-dom"
 
+import styles from "./styles.scss"
+
 let gCounter = 0
 function App () {
 
@@ -18,7 +20,7 @@ function App () {
     {/*  { () => { gCounter = 12 } }*/}
     {/*</div>*/}
 
-    <p><mark>{++gCounter}</mark></p>
+    <p className={styles.bgYellow}><mark>{++gCounter}</mark></p>
     <p><mark>{++gCounter}</mark></p>
     <p><mark>{++gCounter}</mark></p>
 

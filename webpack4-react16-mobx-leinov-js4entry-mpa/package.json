@@ -67,6 +67,7 @@
     "g2-react": "^1.3.2",
     "html2canvas": "^1.0.0-rc.3",
     "immutable": "^4.0.0-rc.12",
+    "lodash": "^4.17.15",
     "md5": "^2.2.1",
     "mobx": "^5.8.0",
     "mobx-react": "^5.4.3",

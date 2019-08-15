@@ -1,7 +1,7 @@
 <template>
     <div id="container" class="svg-container" align="center">
         <h1>{{ title }}</h1>
-        <svg v-if="redrawToggle === true" :width="svgWidth" :height="svgHeight">
+        <svg v-if="redrawToggle" :width="svgWidth" :height="svgHeight">
             <g>
                 <rect
                     v-for="item in data"
@@ -40,43 +40,52 @@
             data: Array
         },
         mounted() {
-            // this.svgWidth = document.getElementById("container").offsetWidth * 0.75;
-            this.svgWidth = 500;
-            this.AddResizeListener();
-            this.AnimateLoad();
+            this.svgWidth = document.getElementById("container").offsetWidth * 0.5;
+            // this.svgWidth = 500;
+            this.addResizeListener();
+            this.animateLoad();
         },
         data: () => ({
             svgWidth: 0,
+            // 控制重载
             redrawToggle: true
         }),
         methods: {
-            AnimateLoad() {
+            animateLoad() {
+
                 selectAll("rect")
                     .data(this.data)
                     .transition()
                     .delay((d, i) => {
                         return i * 150;
                     })
-                    .duration(1000)
+                    .duration(500)
                     .attr("y", d => {
                         return this.yScale(d[this.yKey]);
                     })
                     .attr("height", d => {
                         return this.svgHeight - this.yScale(d[this.yKey]);
                     });
+
+                // 文本
                 selectAll("text")
                     .data(this.data)
                     .enter()
+
             },
-            AddResizeListener() {
+
+            // 监听resize
+            addResizeListener() {
                 // redraw the chart 300ms after the window has been resized
                 window.addEventListener("resize", () => {
                     this.$data.redrawToggle = false;
+
                     setTimeout(() => {
                         this.$data.redrawToggle = true;
-                        this.$data.svgWidth =
-                            document.getElementById("container").offsetWidth * 0.75;
-                        this.AnimateLoad();
+                        this.$data.svgWidth = document.getElementById("container").offsetWidth * 0.5;
+                        // this.$data.svgWidth = 500;
+
+                        this.animateLoad();
                     }, 300);
                 });
             }
@@ -105,7 +114,9 @@
             yScale() {
                 return scaleLinear()
                     .rangeRound([this.svgHeight, 0])
-                    .domain([this.dataMin > 0 ? 0 : this.dataMin + 2, this.dataMax + 2]);
+                    .domain([this.dataMin > 0
+                        ? 0
+                        : this.dataMin + 2, this.dataMax + 2]);
             },
             svgHeight() {
                 // 黄金比例

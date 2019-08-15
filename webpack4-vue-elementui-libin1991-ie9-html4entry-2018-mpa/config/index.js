@@ -104,7 +104,7 @@ let sysName = [
     // 'default/index',
     // 'default/bootstrap',
     // 'demo/demo',
-    'demo/spa',
+    // 'demo/spa',
     // 'cmpts/components',
 
     /* element简易后台 ======== */
@@ -127,8 +127,7 @@ let sysName = [
     // 'app/happyfri',
     // 'veui/table',
 
-
-
+    'd3/basics',
 ][0]
 
 sysName = sysName || 'default/index'

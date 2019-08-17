@@ -48,6 +48,10 @@
   "dependencies": {
     "@antv/data-set": "^0.10.2",
     "@antv/g2": "^3.5.7",
+    "@vx/group": "^0.0.190",
+    "@vx/mock-data": "^0.0.189",
+    "@vx/scale": "^0.0.190",
+    "@vx/shape": "^0.0.190",
     "antd": "^3.20.7",
     "bizcharts": "^3.5.4",
     "browserslist": "^4.6.6",

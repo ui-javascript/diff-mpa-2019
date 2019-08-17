@@ -7,7 +7,7 @@ module.exports = {
   // entries: './_pages/{index,todo}/*.js',
   // entries: './_pages/index/table.js',
   // entries: './_pages/todo/*.js',
-  entries: './_react/basics/*.js',
+  // entries: './_react/basics/*.js',
   // entries: './_react/react16/*.js',
   // entries: './_react/{cmpt,react16}/*.js',
   // entries: './_redux/*/*.js',
@@ -33,6 +33,8 @@ module.exports = {
   // entries: './_g2/index/*.js',
   // entries: './_g2/faq/*.js',
   // entries: './_g2/bizCharts/*.js',
+
+  entries: './_d3/vx/*.js',
 
 
   // entries: './_mobx/*/*.js',

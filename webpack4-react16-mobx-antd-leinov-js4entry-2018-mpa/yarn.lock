@@ -1004,6 +1004,53 @@
   resolved "https://registry.npm.taobao.org/@use-it/event-listener/download/@use-it/event-listener-0.1.3.tgz#a9920b2819d211cf55e68e830997546eec6886d3"
   integrity sha1-qZILKBnSEc9V5o6DCZdUbuxohtM=
 
+"@vx/curve@0.0.189":
+  version "0.0.189"
+  resolved "https://registry.npm.taobao.org/@vx/curve/download/@vx/curve-0.0.189.tgz#0d1961a7dca69b65cdc1d5d325c75290e905771f"
+  integrity sha1-DRlhp9ymm2XNwdXTJcdSkOkFdx8=
+  dependencies:
+    d3-shape "^1.0.6"
+
+"@vx/group@0.0.190", "@vx/group@^0.0.190":
+  version "0.0.190"
+  resolved "https://registry.npm.taobao.org/@vx/group/download/@vx/group-0.0.190.tgz#9bc1e568dbd44c04a0abad9a9a74c7364f231a35"
+  integrity sha1-m8HlaNvUTASgq62amnTHNk8jGjU=
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.6.2"
+
+"@vx/mock-data@^0.0.189":
+  version "0.0.189"
+  resolved "https://registry.npm.taobao.org/@vx/mock-data/download/@vx/mock-data-0.0.189.tgz#a6336965bf295f6dc583db516004385691219db2"
+  integrity sha1-pjNpZb8pX23Fg9tRYAQ4VpEhnbI=
+  dependencies:
+    d3-random "^1.0.3"
+
+"@vx/point@0.0.189":
+  version "0.0.189"
+  resolved "https://registry.npm.taobao.org/@vx/point/download/@vx/point-0.0.189.tgz#2a52824dd3e7a1e74188c2ee9407aeee2a2a7a10"
+  integrity sha1-KlKCTdPnoedBiMLulAeu7ioqehA=
+
+"@vx/scale@^0.0.190":
+  version "0.0.190"
+  resolved "https://registry.npm.taobao.org/@vx/scale/download/@vx/scale-0.0.190.tgz#f2799a7e1b29aed9626c4f0ceab0a330469c0d90"
+  integrity sha1-8nmafhsprtlibE8M6rCjMEacDZA=
+  dependencies:
+    d3-scale "^2.2.2"
+
+"@vx/shape@^0.0.190":
+  version "0.0.190"
+  resolved "https://registry.npm.taobao.org/@vx/shape/download/@vx/shape-0.0.190.tgz#2807bb53dbea0922c9c12651a6bc33f8abe6d0e4"
+  integrity sha1-KAe7U9vqCSLJwSZRprwz+Kvm0OQ=
+  dependencies:
+    "@vx/curve" "0.0.189"
+    "@vx/group" "0.0.190"
+    "@vx/point" "0.0.189"
+    classnames "^2.2.5"
+    d3-path "^1.0.5"
+    d3-shape "^1.2.0"
+    prop-types "^15.5.10"
+
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.7.11.tgz#b988582cafbb2b095e8b556526f30c90d057cace"
@@ -3015,6 +3062,11 @@ d3-path@1, d3-path@^1.0.7:
   resolved "https://registry.npm.taobao.org/d3-path/download/d3-path-1.0.7.tgz#8de7cd693a75ac0b5480d3abaccd94793e58aae8"
   integrity sha1-jefNaTp1rAtUgNOrrM2UeT5Yqug=
 
+d3-path@^1.0.5:
+  version "1.0.8"
+  resolved "https://registry.npm.taobao.org/d3-path/download/d3-path-1.0.8.tgz#4a0606a794d104513ec4a8af43525f374b278719"
+  integrity sha1-SgYGp5TRBFE+xKivQ1JfN0snhxk=
+
 d3-polygon@1:
   version "1.0.5"
   resolved "https://registry.npm.taobao.org/d3-polygon/download/d3-polygon-1.0.5.tgz#9a645a0a64ff6cbf9efda96ee0b4a6909184c363"
@@ -3025,7 +3077,7 @@ d3-quadtree@1:
   resolved "https://registry.npm.taobao.org/d3-quadtree/download/d3-quadtree-1.0.6.tgz#d1ab2a95a7f27bbde88582c94166f6ae35f32056"
   integrity sha1-0asqlafye73ohYLJQWb2rjXzIFY=
 
-d3-random@1:
+d3-random@1, d3-random@^1.0.3:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/d3-random/download/d3-random-1.1.2.tgz#2833be7c124360bf9e2d3fd4f33847cfe6cab291"
   integrity sha1-KDO+fBJDYL+eLT/U8zhHz+bKspE=
@@ -3047,7 +3099,7 @@ d3-scale-chromatic@1:
     d3-color "1"
     d3-interpolate "1"
 
-d3-scale@2:
+d3-scale@2, d3-scale@^2.2.2:
   version "2.2.2"
   resolved "https://registry.npm.taobao.org/d3-scale/download/d3-scale-2.2.2.tgz#4e880e0b2745acaaddd3ede26a9e908a9e17b81f"
   integrity sha1-TogOCydFrKrd0+3iap6Qip4XuB8=
@@ -3064,7 +3116,7 @@ d3-selection@1, d3-selection@^1.0.2, d3-selection@^1.1.0:
   resolved "https://registry.npm.taobao.org/d3-selection/download/d3-selection-1.4.0.tgz#ab9ac1e664cf967ebf1b479cc07e28ce9908c474"
   integrity sha1-q5rB5mTPln6/G0ecwH4ozpkIxHQ=
 
-d3-shape@1, d3-shape@^1.2.0:
+d3-shape@1, d3-shape@^1.0.6, d3-shape@^1.2.0:
   version "1.3.5"
   resolved "https://registry.npm.taobao.org/d3-shape/download/d3-shape-1.3.5.tgz#e81aea5940f59f0a79cfccac012232a8987c6033"
   integrity sha1-6BrqWUD1nwp5z8ysASIyqJh8YDM=

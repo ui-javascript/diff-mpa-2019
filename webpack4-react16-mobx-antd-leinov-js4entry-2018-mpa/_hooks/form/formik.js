@@ -5,7 +5,7 @@ import { Formik, Form, Field } from 'formik';
 
 const Basic = () => (
   <div>
-    <h1>Anywhere in your app!</h1>
+
     <Formik
       initialValues={{ email: '', password: '' }}
       validate={values => {
@@ -20,10 +20,10 @@ const Basic = () => (
         return errors;
       }}
       onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
+        // setTimeout(() => {
           alert(JSON.stringify(values, null, 2));
           setSubmitting(false);
-        }, 400);
+        // }, 400);
       }}
     >
       {({
@@ -49,7 +49,8 @@ const Basic = () => (
             {errors.email && touched.email && errors.email}
           </div>
 
-          <div>
+
+          <div className={"mt-2"}>
             <input
               type="password"
               name="password"
@@ -61,9 +62,10 @@ const Basic = () => (
             {errors.password && touched.password && errors.password}
           </div>
 
-          <button type="submit" disabled={isSubmitting}>
+          <button className={"mt-2"} type="submit" disabled={isSubmitting}>
             Submit
           </button>
+
         </form>
       )}
     </Formik>

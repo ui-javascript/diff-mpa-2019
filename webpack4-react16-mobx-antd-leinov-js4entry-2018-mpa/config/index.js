@@ -34,7 +34,7 @@ module.exports = {
   // entries: './_g2/faq/*.js',
   // entries: './_g2/bizCharts/*.js',
 
-  entries: './_d3/vx/*.js',
+  // entries: './_d3/vx/*.js',
 
 
   // entries: './_mobx/*/*.js',
@@ -45,7 +45,7 @@ module.exports = {
   // entries: './_hooks/rmind/*.js',
   // entries: './_hooks/storage/*.js',
   // entries: './_hooks/fetch/*.js',
-  // entries: './_hooks/form/*.js',
+  entries: './_hooks/form/*.js',
   // entries: './_hooks/picker/*.js',
   // entries: './_hooks/utils/*.js',
   // entries: './_hooks/theme/*.js',

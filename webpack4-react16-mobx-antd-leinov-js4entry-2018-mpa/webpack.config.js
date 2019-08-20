@@ -51,16 +51,21 @@ module.exports = (env, argv) => ({
             {
                 test: /\.css$/,
                 use: ["style-loader", "css-loader"],
-                exclude: /node_modules/,
+                // exclude: /node_modules/,
             },
             {
-                test: /\.(scss|css)$/, //css打包 路径在plugins里
+                //css打包 路径在plugins里
+                test: /\.(css|less|scss)$/, 
                 use: [
+                    // 是否提取
                     argv.mode == "development" ? {loader: "style-loader"} : MiniCssExtractPlugin.loader,
+                    
                     {loader: "css-loader", options: {url: false, sourceMap: true}},
-                    {loader: "sass-loader", options: {sourceMap: true}}
+                    {loader: "sass-loader", options: {sourceMap: true}},
+                    {loader: "less-loader", options: {sourceMap: true, javascriptEnabled: true}},                
                 ],
-                exclude: /node_modules/,
+                // exclude: /node_modules/,
+            
             },
             {
                 test: /\.(png|jpg)$/,

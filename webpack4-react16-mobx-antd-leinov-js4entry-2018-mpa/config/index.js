@@ -15,6 +15,7 @@ module.exports = {
   // entries: './_antd/basics/*.js',
   // entries: './_antd/table/*.js',
   // entries: './_antd/model/*.js',
+  entries: './_antd/sunflower/*.js',
 
   // entries: './_amap/*/*.js',
   // entries: './_amap/province/*.js',
@@ -45,7 +46,7 @@ module.exports = {
   // entries: './_hooks/rmind/*.js',
   // entries: './_hooks/storage/*.js',
   // entries: './_hooks/fetch/*.js',
-  entries: './_hooks/form/*.js',
+  // entries: './_hooks/form/*.js',
   // entries: './_hooks/picker/*.js',
   // entries: './_hooks/utils/*.js',
   // entries: './_hooks/theme/*.js',

@@ -967,6 +967,39 @@
   resolved "https://registry.npm.taobao.org/@emotion/weak-memoize/download/@emotion/weak-memoize-0.2.2.tgz#63985d3d8b02530e0869962f4da09142ee8e200e"
   integrity sha1-Y5hdPYsCUw4IaZYvTaCRQu6OIA4=
 
+"@sunflower-antd/cascade-select@0.0.0-alpha.4":
+  version "0.0.0-alpha.4"
+  resolved "https://registry.npm.taobao.org/@sunflower-antd/cascade-select/download/@sunflower-antd/cascade-select-0.0.0-alpha.4.tgz#869a621bd5340dbd9e4230b7639a61f474b46380"
+  integrity sha1-hppiG9U0Db2eQjC3Y5ph9HS0Y4A=
+  dependencies:
+    "@sunflower-hooks/cascade-search" "0.0.0-alpha.3"
+    "@sunflower-hooks/store" "0.0.0-alpha.2"
+
+"@sunflower-antd/form-table@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.npm.taobao.org/@sunflower-antd/form-table/download/@sunflower-antd/form-table-0.1.0.tgz#c674a0858e655a68c31a64121b6bb07425ecddad"
+  integrity sha1-xnSghY5lWmjDGmQSG2uwdCXs3a0=
+  dependencies:
+    "@sunflower-hooks/search-result" "0.0.0-alpha.6"
+    "@sunflower-hooks/store" "0.0.0-alpha.2"
+    rc-field-form "0.0.0-alpha.16"
+    sunflower-form "0.0.0-alpha.5"
+
+"@sunflower-hooks/cascade-search@0.0.0-alpha.3":
+  version "0.0.0-alpha.3"
+  resolved "https://registry.npm.taobao.org/@sunflower-hooks/cascade-search/download/@sunflower-hooks/cascade-search-0.0.0-alpha.3.tgz#da33ab75cde9559d8f53023ff77efbd8e42b8bc7"
+  integrity sha1-2jOrdc3pVZ2PUwI/93772OQri8c=
+
+"@sunflower-hooks/search-result@0.0.0-alpha.6":
+  version "0.0.0-alpha.6"
+  resolved "https://registry.npm.taobao.org/@sunflower-hooks/search-result/download/@sunflower-hooks/search-result-0.0.0-alpha.6.tgz#0b30fcdba15fc922c9b6eca1ed94e1e52ab3f921"
+  integrity sha1-CzD826FfySLJtuyh7ZTh5Sqz+SE=
+
+"@sunflower-hooks/store@0.0.0-alpha.2":
+  version "0.0.0-alpha.2"
+  resolved "https://registry.npm.taobao.org/@sunflower-hooks/store/download/@sunflower-hooks/store-0.0.0-alpha.2.tgz#6ef0c1de58e4b1c84a1117046bfee8a649666985"
+  integrity sha1-bvDB3ljkschKERcEa/7opklmaYU=
+
 "@types/prop-types@*":
   version "15.7.1"
   resolved "https://registry.npm.taobao.org/@types/prop-types/download/@types/prop-types-15.7.1.tgz#f1a11e7babb0c3cad68100be381d1e064c68f1f6"
@@ -1511,6 +1544,11 @@ async-foreach@^0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/async-foreach/-/async-foreach-0.1.3.tgz#36121f845c0578172de419a97dbeb1d16ec34542"
   integrity sha1-NhIfhFwFeBct5Bmpfb6x0W7DRUI=
+
+async-validator@^1.11.2:
+  version "1.12.2"
+  resolved "https://registry.npm.taobao.org/async-validator/download/async-validator-1.12.2.tgz?cache=0&sync_timestamp=1565685468183&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fasync-validator%2Fdownload%2Fasync-validator-1.12.2.tgz#beae671e7174d2938b7b4b69d2fb7e722b7fd72c"
+  integrity sha1-vq5nHnF00pOLe0tp0vt+cit/1yw=
 
 async-validator@~1.11.3:
   version "1.11.5"
@@ -2272,6 +2310,11 @@ clone@^1.0.1:
   version "1.0.4"
   resolved "https://registry.npm.taobao.org/clone/download/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
   integrity sha1-2jCcwmPfFZlMaIypAheco8fNfH4=
+
+clone@^2.1.1, clone@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.npm.taobao.org/clone/download/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
+  integrity sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=
 
 coa@~2.0.1:
   version "2.0.2"
@@ -3651,7 +3694,7 @@ entities@~1.1.1:
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
   integrity sha512-f2LZMYl1Fzu7YSBKg+RoROelpOaNrcGmE9AZubeDfrCEia483oW4MI4VyFd5VNHIgQ/7qm1I0wUHK1eJnn2y2w==
 
-errno@^0.1.3, errno@~0.1.7:
+errno@^0.1.1, errno@^0.1.3, errno@~0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/errno/-/errno-0.1.7.tgz#4684d71779ad39af177e3f007996f7c67c852618"
   integrity sha512-MfrRBDWzIWifgq6tJj60gkAwtLNb6sQPlcFrSOflcP1aFmmruKQ2wRnze/8V6kgyz7H3FF8Npzv78mZ7XLLflg==
@@ -4755,6 +4798,11 @@ ignore-walk@^3.0.1:
   dependencies:
     minimatch "^3.0.4"
 
+image-size@~0.5.0:
+  version "0.5.5"
+  resolved "https://registry.npm.taobao.org/image-size/download/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
+  integrity sha1-Cd/Uq50g4p6xw+gLiZA3jfnjy5w=
+
 immutability-helper-x@^1.0.5:
   version "1.0.5"
   resolved "https://registry.npm.taobao.org/immutability-helper-x/download/immutability-helper-x-1.0.5.tgz#cc531668cbb52669c15438383ac93f3324bcd802"
@@ -5388,6 +5436,31 @@ lcid@^2.0.0:
   dependencies:
     invert-kv "^2.0.0"
 
+less-loader@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npm.taobao.org/less-loader/download/less-loader-5.0.0.tgz#498dde3a6c6c4f887458ee9ed3f086a12ad1b466"
+  integrity sha1-SY3eOmxsT4h0WO6e0/CGoSrRtGY=
+  dependencies:
+    clone "^2.1.1"
+    loader-utils "^1.1.0"
+    pify "^4.0.1"
+
+less@^3.10.1:
+  version "3.10.1"
+  resolved "https://registry.npm.taobao.org/less/download/less-3.10.1.tgz?cache=0&sync_timestamp=1566092335231&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fless%2Fdownload%2Fless-3.10.1.tgz#a1c97e3436acdfd1757916333b9906f3af7d559e"
+  integrity sha1-ocl+NDas39F1eRYzO5kG8699VZ4=
+  dependencies:
+    clone "^2.1.2"
+  optionalDependencies:
+    errno "^0.1.1"
+    graceful-fs "^4.1.2"
+    image-size "~0.5.0"
+    mime "^1.4.1"
+    mkdirp "^0.5.0"
+    promise "^7.1.1"
+    request "^2.83.0"
+    source-map "~0.6.0"
+
 levn@~0.3.0:
   version "0.3.0"
   resolved "https://registry.npm.taobao.org/levn/download/levn-0.3.0.tgz#3b09924edf9f083c0490fdd4c0bc4421e04764ee"
@@ -5749,6 +5822,11 @@ mime@1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.4.1.tgz#121f9ebc49e3766f311a76e1fa1c8003c4b03aa6"
   integrity sha512-KI1+qOZu5DcW6wayYHSzR/tXKCDC5Om4s1z2QJjDULzLcmf3DvzS7oluY4HCTrc+9FiKmWUgeNLg7W3uIQvxtQ==
+
+mime@^1.4.1:
+  version "1.6.0"
+  resolved "https://registry.npm.taobao.org/mime/download/mime-1.6.0.tgz?cache=0&sync_timestamp=1560034758817&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmime%2Fdownload%2Fmime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
+  integrity sha1-Ms2eXGRVO9WNGaVor0Uqz/BJgbE=
 
 mime@^2.0.3, mime@^2.3.1:
   version "2.4.0"
@@ -6613,6 +6691,11 @@ pify@^3.0.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
   integrity sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
 
+pify@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npm.taobao.org/pify/download/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
+  integrity sha1-SyzSXFDVmHNcUCkiJP2MbfQeMjE=
+
 pinkie-promise@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/pinkie-promise/-/pinkie-promise-2.0.1.tgz#2135d6dfa7a358c069ac9b178776288228450ffa"
@@ -7350,6 +7433,16 @@ rc-editor-mention@^1.1.13:
     rc-animate "^2.3.0"
     rc-editor-core "~0.8.3"
 
+rc-field-form@0.0.0-alpha.16:
+  version "0.0.0-alpha.16"
+  resolved "https://registry.npm.taobao.org/rc-field-form/download/rc-field-form-0.0.0-alpha.16.tgz#4330300c4c01eb030d85f8f26927379ae5eff04c"
+  integrity sha1-QzAwDEwB6wMNhfjyaSc3muXv8Ew=
+  dependencies:
+    async-validator "^1.11.2"
+    lodash "^4.17.4"
+    rc-util "^4.6.0"
+    warning "^4.0.3"
+
 rc-form@^2.4.5:
   version "2.4.8"
   resolved "https://registry.npm.taobao.org/rc-form/download/rc-form-2.4.8.tgz#79a1f124d4fa81dff2af2992e94aa3e58cad683c"
@@ -8072,7 +8165,7 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
-request@^2.87.0, request@^2.88.0:
+request@^2.83.0, request@^2.87.0, request@^2.88.0:
   version "2.88.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.0.tgz#9c2fca4f7d35b592efe57c7f0a55e81052124fef"
   integrity sha512-NAqBSrijGLZdM0WZNsInLJpkJokL72XYjUpnB0iwsRgxh7dB6COrHnTBNwN0E+lHDAJzu7kLAkDeY08z2/A0hg==
@@ -8978,6 +9071,21 @@ stylis@3.5.0:
   version "3.5.0"
   resolved "https://registry.npm.taobao.org/stylis/download/stylis-3.5.0.tgz#016fa239663d77f868fef5b67cf201c4b7c701e1"
   integrity sha1-AW+iOWY9d/ho/vW2fPIBxLfHAeE=
+
+sunflower-antd@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npm.taobao.org/sunflower-antd/download/sunflower-antd-0.1.0.tgz#efec6fe7b33335f4a291699f7a5b457d7641551f"
+  integrity sha1-7+xv57MzNfSikWmfeltFfXZBVR8=
+  dependencies:
+    "@sunflower-antd/cascade-select" "0.0.0-alpha.4"
+    "@sunflower-antd/form-table" "0.1.0"
+
+sunflower-form@0.0.0-alpha.5:
+  version "0.0.0-alpha.5"
+  resolved "https://registry.npm.taobao.org/sunflower-form/download/sunflower-form-0.0.0-alpha.5.tgz#433484caea9d9147d803240bfcf6b5aa512ac3fd"
+  integrity sha1-QzSEyuqdkUfYAyQL/Pa1qlEqw/0=
+  dependencies:
+    rc-field-form "0.0.0-alpha.16"
 
 supports-color@^2.0.0:
   version "2.0.0"

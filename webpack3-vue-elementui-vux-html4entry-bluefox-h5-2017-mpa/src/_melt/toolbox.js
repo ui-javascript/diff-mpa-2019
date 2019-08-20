@@ -5,7 +5,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 // 全局注册
-import TanApp from './views/toolbox/tantanPage'
+import TanApp from './components/toolbox/tantanPage'
 
 const routes = [
     {path: '/', component: TanApp},

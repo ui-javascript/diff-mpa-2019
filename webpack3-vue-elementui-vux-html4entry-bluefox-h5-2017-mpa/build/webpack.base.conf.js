@@ -101,7 +101,12 @@ var webpackConfig = {
                 include: [
                     resolve('src'),
                     resolve('test')
-                ]
+                ],
+                // @fix Couldn't find preset "es2015" relative to directory
+                // https://www.cnblogs.com/weizaiyes/p/7462274.html
+                query: {
+                  presets: ['es2015']
+                }
             },
             {
                 test: /\.svg$/,

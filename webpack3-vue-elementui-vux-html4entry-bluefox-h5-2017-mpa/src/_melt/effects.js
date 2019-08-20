@@ -4,8 +4,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import LoadingWaterApp from './views/effects/loadingWaterPage'
-import FireFlyApp from './views/effects/fireflyPage'
+import LoadingWaterApp from './components/effects/loadingWaterPage'
+import FireFlyApp from './components/effects/fireflyPage'
 
 const routes = [
     {path: '/', component: LoadingWaterApp},

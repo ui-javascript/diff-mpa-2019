@@ -9,9 +9,9 @@ import CamelUI from 'camel-ui'
 Vue.use(CamelUI)
 
 import CalendarApp from '~/model/MCalendar'
-import CamelApp from './views/model/camelPage'
-import LoadingApp from './views/effects/loadingPage'
-import TableApp from './views/model/tablePage'
+import CamelApp from './components/model/camelPage'
+import LoadingApp from './components/effects/loadingPage'
+import TableApp from './components/model/tablePage'
 
 const routes = [
     {path: '/', component: CamelApp},

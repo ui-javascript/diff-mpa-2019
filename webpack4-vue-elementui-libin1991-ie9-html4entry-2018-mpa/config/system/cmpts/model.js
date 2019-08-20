@@ -8,7 +8,7 @@ module.exports = {
   system: {
     supportIE8: false,
     pages: '_cmpts',
-    modules: 'components',
+    modules: 'model',
     resolveAlias: {},
     externals: {
     }

@@ -127,6 +127,8 @@ let sysName = [
     // 'app/happyfri',
     // 'veui/table',
 
+    'cmpts/model',
+
     'd3/basics',
 ][0]
 

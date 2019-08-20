@@ -1345,6 +1345,13 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
+antd-password-input-strength@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npm.taobao.org/antd-password-input-strength/download/antd-password-input-strength-1.1.1.tgz#66572ecaecc35140c8ebf47e32f324680d2b6920"
+  integrity sha1-ZlcuyuzDUUDI6/R+MvMkaA0raSA=
+  dependencies:
+    zxcvbn "^4.4.2"
+
 antd@^3.20.7:
   version "3.20.7"
   resolved "https://registry.npm.taobao.org/antd/download/antd-3.20.7.tgz#a01b0a23dc9bb93de79b8847fa754c6caae1686c"
@@ -10051,3 +10058,8 @@ zrender@4.0.7, zrender@^4.0.4:
   version "4.0.7"
   resolved "https://registry.npm.taobao.org/zrender/download/zrender-4.0.7.tgz#15ae960822f5efed410995d37e5107fe3de10e6d"
   integrity sha1-Fa6WCCL17+1BCZXTflEH/j3hDm0=
+
+zxcvbn@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.npm.taobao.org/zxcvbn/download/zxcvbn-4.4.2.tgz#28ec17cf09743edcab056ddd8b1b06262cc73c30"
+  integrity sha1-KOwXzwl0PtyrBW3dixsGJizHPDA=

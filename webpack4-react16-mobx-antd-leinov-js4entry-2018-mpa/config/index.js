@@ -14,8 +14,8 @@ module.exports = {
 
   // entries: './_antd/basics/*.js',
   // entries: './_antd/table/*.js',
-  // entries: './_antd/model/*.js',
-  entries: './_antd/sunflower/*.js',
+  entries: './_antd/model/*.js',
+  // entries: './_antd/sunflower/*.js',
 
   // entries: './_amap/*/*.js',
   // entries: './_amap/province/*.js',

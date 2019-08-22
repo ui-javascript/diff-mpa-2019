@@ -105,12 +105,8 @@ let sysName = [
     // 'default/bootstrap',
     // 'demo/demo',
     // 'demo/spa',
-    // 'cmpts/components',
+    'demo/admin',
 
-    /* element简易后台 ======== */
-    // 'admin/_all',
-    // 'admin/index',
-    // 'admin/element',
 
     /* vue小应用 ============== */
     // 'app/_all',
@@ -128,7 +124,7 @@ let sysName = [
     // 'veui/table',
 
     // 'cmpts/model',
-    'cmpts/effects',
+    // 'cmpts/effects',
     // 'cmpts/toolbox',
     // 'cmpts/layout',
 

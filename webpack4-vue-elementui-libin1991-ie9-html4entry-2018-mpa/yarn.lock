@@ -10568,6 +10568,11 @@ vue-markdown-loader@^2.4.1:
     loader-utils "^1.1.0"
     markdown-it "^8.4.0"
 
+vue-progress-path@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npm.taobao.org/vue-progress-path/download/vue-progress-path-0.0.2.tgz#d780fc7a96dbc7f784eb52895aeef7a5f0af6325"
+  integrity sha1-14D8epbbx/eE61KJWu73pfCvYyU=
+
 vue-resource@^1.5.1:
   version "1.5.1"
   resolved "https://registry.npm.taobao.org/vue-resource/download/vue-resource-1.5.1.tgz#0f3d685e3254d21800bebd966edcf56c34b3b6e4"

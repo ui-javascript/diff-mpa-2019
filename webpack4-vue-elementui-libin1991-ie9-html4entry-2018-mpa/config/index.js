@@ -129,8 +129,10 @@ let sysName = [
 
     // 'cmpts/model',
     'cmpts/effects',
+    // 'cmpts/toolbox',
+    // 'cmpts/layout',
 
-    'd3/basics',
+    // 'd3/basics',
 ][0]
 
 sysName = sysName || 'default/index'

@@ -58,7 +58,7 @@ let webpackConfig = {
                 loader: 'vue-loader',
                 options: {
                     loaders: {
-                        // @deprecated
+                        // @deprecated 写法LOW
                         css: ExtractTextPlugin.extract({ use: ['css-loader?minimize&sourceMap=false', 'postcss-loader'] }),
                         less: ExtractTextPlugin.extract({ use: ['css-loader?minimize&sourceMap=false', 'postcss-loader', "less-loader" ] }),
                         // sass: ExtractTextPlugin.extract({ use: ['css-loader?minimize&sourceMap=false', 'postcss-loader', "sass-loader" ] }),
@@ -69,6 +69,7 @@ let webpackConfig = {
                 },
                 include: [
                     resolve('src'),
+                    // 包括当前工程
                     resolve(myConfig.system.pages),
                 ]
             },

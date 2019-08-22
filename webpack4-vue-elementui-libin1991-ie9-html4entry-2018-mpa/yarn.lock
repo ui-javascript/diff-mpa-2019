@@ -1192,7 +1192,7 @@ babel-plugin-transform-es2015-modules-amd@^6.22.0, babel-plugin-transform-es2015
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-plugin-transform-es2015-modules-commonjs@^6.23.0, babel-plugin-transform-es2015-modules-commonjs@^6.24.1:
+babel-plugin-transform-es2015-modules-commonjs@^6.23.0, babel-plugin-transform-es2015-modules-commonjs@^6.24.1, babel-plugin-transform-es2015-modules-commonjs@^6.26.2:
   version "6.26.2"
   resolved "https://registry.npm.taobao.org/babel-plugin-transform-es2015-modules-commonjs/download/babel-plugin-transform-es2015-modules-commonjs-6.26.2.tgz#58a793863a9e7ca870bdc5a881117ffac27db6f3"
   integrity sha1-WKeThjqefKhwvcWogRF/+sJ9tvM=
@@ -10567,11 +10567,6 @@ vue-markdown-loader@^2.4.1:
     highlight.js "^9.4.0"
     loader-utils "^1.1.0"
     markdown-it "^8.4.0"
-
-vue-progress-path@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.npm.taobao.org/vue-progress-path/download/vue-progress-path-0.0.2.tgz#d780fc7a96dbc7f784eb52895aeef7a5f0af6325"
-  integrity sha1-14D8epbbx/eE61KJWu73pfCvYyU=
 
 vue-resource@^1.5.1:
   version "1.5.1"

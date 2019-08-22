@@ -10,7 +10,6 @@
     "install:taobao": "npm install --registry=https://registry.npm.taobao.org",
     "install:yarn": "yarn install",
     "remove": "rimraf node_modules",
-
     "dev": "cross-env NODE_ENV=development webpack-dev-server  --hot --inline  --watch --host  0.0.0.0 --config build/webpack.config.dev.js --mode development",
     "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.prod.js --mode production"
   },
@@ -61,6 +60,7 @@
     "vue-easy-toast": "^1.0.5",
     "vue-lazyload": "^1.2.6",
     "vue-markdown-loader": "^2.4.1",
+    "vue-progress-path": "^0.0.2",
     "vue-resource": "^1.5.1",
     "vue-router": "^3.0.1",
     "vue-scroll": "^2.1.7",

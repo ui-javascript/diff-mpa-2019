@@ -1,12 +1,13 @@
 import React, { useRef, useEffect, useState } from 'react'
 import ReactDOM from 'react-dom'
+import {message} from 'antd' 
 
 function App() {
     const [count, setCount] = useState(0);
   
     useEffect(() => {
       setTimeout(() => {
-        alert("count: " + count);
+        message.success("count: " + count)
       }, 3000);
     }, [count]);
   

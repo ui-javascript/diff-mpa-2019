@@ -1,22 +1,24 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-import { Button, Input } from "antd"
+import { Button, Input, message } from "antd"
 import { useFormTable } from 'sunflower-antd';
 
 import 'antd/es/style/themes/default.less';
 
 function request (values) {
-  alert(values)
+
+  message.info(JSON.stringify(values))
 }
 
 function Component(props) {
-    const { Form, Table } = useFormTable({
+
+    const { Form, Table, form } = useFormTable({
         search: (values) => request(values),
         defaultPageSize: 5,
       });
       
-    return <div>
+    return <div className="w-1/2 p-2">
     <Form layout="inline">
       <Form.Item
         label="Username"

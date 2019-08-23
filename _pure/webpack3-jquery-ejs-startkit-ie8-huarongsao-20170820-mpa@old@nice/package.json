@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "install:tyarn": "tyarn install",
+    "install:npm": "npm install",
+    "remove": "rimraf node_modules",
+
     "start": "cross-env NODE_ENV=development webpack-dashboard  babel-node build/webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production  webpack --config build/webpack.config.production.js --progress",
     "server": "npm run build && babel-node bin/server "

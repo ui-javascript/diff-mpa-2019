@@ -79,7 +79,7 @@ config.module.rules.push({
     loader: 'url-loader',
     options: {
         limit: 8192,
-        name: 'image/[name].[hash:8].[ext]',
+        name: 'assets/[name].[hash:8].[ext]',
     }
 })
 
@@ -89,7 +89,7 @@ config.module.rules.push({
 // ------------------------------------
 
 const extractStyles = new ExtractTextPlugin({
-    filename: 'style/[name].[contenthash:8].css',
+    filename: 'styles/[name].[contenthash:8].css',
     allChunks: false,
     disable: false,
 })

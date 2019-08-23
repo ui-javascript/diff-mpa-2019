@@ -1,4 +1,4 @@
-@import "./../../style/utill";
+@import "./../../styles/utill";
 body,html{
   width: 100%;
   height: 100%;
@@ -6,7 +6,8 @@ body,html{
   margin: 0;
 }
 body {
-  background-image: url("./../view/home/asset/bg.jpg");
+  // 路径很诡异
+  background-image: url("./../pages/home/asset/bg.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top center;

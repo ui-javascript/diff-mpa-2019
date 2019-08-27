@@ -82,6 +82,7 @@
     "node-notifier": "^5.4.0",
     "normalize.css": "^8.0.1",
     "pdfkit": "^0.10.0",
+    "prop-types": "^15.7.2",
     "react": "^16.7.0",
     "react-amap": "^1.2.8",
     "react-amap-plugin-heatmap": "^0.0.7",

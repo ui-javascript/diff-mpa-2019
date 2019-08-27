@@ -7,7 +7,7 @@ module.exports = {
   // entries: './_pages/{index,todo}/*.js',
   // entries: './_pages/index/table.js',
   // entries: './_pages/todo/*.js',
-  // entries: './_react/basics/*.js',
+  entries: './_react/basics/*.js',
   // entries: './_react/react16/*.js',
   // entries: './_react/{cmpt,react16}/*.js',
   // entries: './_redux/*/*.js',
@@ -42,7 +42,7 @@ module.exports = {
   // entries: './_mobx/todo/todo-mobx.js',
 
   // entries: './_hooks/*/*.js',
-  entries: './_hooks/basics/*.js',
+  // entries: './_hooks/basics/*.js',
   // entries: './_hooks/rmind/*.js',
   // entries: './_hooks/storage/*.js',
   // entries: './_hooks/fetch/*.js',

@@ -24,7 +24,6 @@
     "request": "^2.85.0"
   },
   "devDependencies": {
-    "husky": "^0.14.3",
     "intelli-espower-loader": "^1.0.1",
     "lint-staged": "^7.1.0",
     "mocha": "^5.1.1",

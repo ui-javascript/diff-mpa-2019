@@ -69,7 +69,6 @@
     "gulp-vsftp": "^0.7.8",
     "gulp-zip": "^4.1.0",
     "html-webpack-plugin": "^3.2.0",
-    "husky": "^1.3.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.1.0",
     "jest-cli": "^24.1.0",
@@ -105,11 +104,6 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__jest__/__mocks__/fileMock.js",
       "\\.(css|scss)$": "identity-obj-proxy",
       "^cpn(.*)$": "<rootDir>/src$1"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "eslint src --ext .js,.jsx"
     }
   }
 }

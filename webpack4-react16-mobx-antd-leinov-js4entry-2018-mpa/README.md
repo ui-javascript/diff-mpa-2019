@@ -17,5 +17,6 @@ ReactDOM.render(<App />, document.getElementById("root"))
 
 # TODO
 
-- 直接处理css格式
+- @fix Browserslist: caniuse-lite is outdated. Please run next command `yarn upgrade caniuse-lite browserslist`
+- 可处理css格式
 - 多个项目使用各自的static路径

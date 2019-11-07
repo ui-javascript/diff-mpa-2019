@@ -53,6 +53,7 @@
     "@vx/scale": "^0.0.190",
     "@vx/shape": "^0.0.190",
     "antd": "^3.20.7",
+    "antd-doddle": "^1.1.0",
     "antd-password-input-strength": "^1.1.1",
     "bizcharts": "^3.5.4",
     "browserslist": "^4.6.6",

@@ -1,11 +1,16 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import ReactDOM from 'react-dom'
 
-const colorContext = React.createContext("gray");
+const colorContext = React.createContext({});
 
 function Bar() {
-  const color = useContext(colorContext);
-  return <div>{color}</div>;
+  const { color, setColor } = useContext(colorContext);
+
+  const handleChangeColor = () => {
+    setColor('green')
+  }
+
+  return <div className="cursor-pointer" onClick={handleChangeColor}>{color}</div>;
 }
 
 function Foo() {
@@ -13,8 +18,9 @@ function Foo() {
 }
 
 function App() {
+  const [color, setColor] =  useState("grey")
   return (
-    <colorContext.Provider value={"red"}>
+    <colorContext.Provider value={{ color, setColor }}>
       <Foo />
     </colorContext.Provider>
   );

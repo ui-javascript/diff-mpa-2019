@@ -37,7 +37,6 @@ module.exports = {
 
   // entries: './_d3/vx/*.js',
 
-
   // entries: './_mobx/*/*.js',
   // entries: './_mobx/todo/todo-mobx.js',
 

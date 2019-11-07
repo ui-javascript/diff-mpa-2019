@@ -9,11 +9,11 @@ function App() {
     const showCount = () => {
       message.success("count: " + $count.current)
     };
-  
+
     const handleClick = number => {
       $count.current = $count.current + number;
 
-      // 这句注释，会无法更新?????
+      // @TODO 这句注释，会无法更新?????
       setCount($count.current)
 
       setTimeout(showCount, 1000);
@@ -24,7 +24,7 @@ function App() {
     //   setCount($count.current)
     // }, [$count])
 
-    
+
     return (
       <div>
         {/* <p>You clicked {count} times</p> */}
@@ -34,6 +34,6 @@ function App() {
       </div>
     );
   }
-  
+
 ReactDOM.render(<App />, document.getElementById("root"))
 

@@ -1,8 +1,0 @@
-*.pdf
-.DS_Store
-node_modules
-*.log
-build
-*.diff
-book.md
-coverage

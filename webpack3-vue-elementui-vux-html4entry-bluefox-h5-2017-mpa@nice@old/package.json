@@ -27,7 +27,7 @@
     "axios": "^0.16.0",
     "babel-preset-es2015": "^6.24.1",
     "camel-ui": "^1.0.3",
-    "dexie": "^2.0.4",
+    "dexie": "^3.2.2",
     "element-ui": "^2.4.4",
     "fastclick": "^1.0.6",
     "jquery": "^2.2.3",
